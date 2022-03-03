@@ -11,5 +11,7 @@ The ratingraph website provides ranking and information about tv shows and their
 
 Our scraper takes most of the information from the top 250 tv shows and details about their directors and writers.
 
-**Note: The running time is approximately 3 hours at the moment **
+#### Note
+
+The running time is approximately 3 hours at the moment 
 
