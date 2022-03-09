@@ -2,6 +2,8 @@
 Assignment name - Data Mining project.
 Authors - Sarah Marciano, Alon Gabay.
 """
+import grequests
+import requests
 from staff_member import StaffMember
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -10,16 +12,17 @@ from selenium import webdriver
 from bs4 import BeautifulSoup
 from tv_shows import TvShow
 import chromedriver_autoinstaller
-import requests
 from time import sleep
 from datetime import datetime
-# import grequests
-
+import argparse
+from tqdm import tqdm
 
 TWO_HUNDRED_FIFTY = 250
 TWO_HUNDRED_FIFTY_INDEX = 4
 SLEEP = 2
 URL = 'https://www.ratingraph.com/tv-shows'
+
+staff_member_instance_dict = {}
 
 
 def get_headless_driver():
@@ -31,10 +34,12 @@ def get_headless_driver():
     return driver
 
 
-def get_staff_member_details(staff_member_url, staff_role):
+def get_staff_member_details(soup, staff_role):
+    """
+    Given a BeautifulSoup object that represent the staff member web pag (soup), and the role of the staff member
+    returns the staff member rank and the number of tv shows he/she worked on as a tuple (rank,tv_show).
+    """
     details_dict = {'Rank': 0, 'TV shows': 0}
-    html_text = requests.get(staff_member_url).text
-    soup = BeautifulSoup(html_text, 'html.parser')
     staff_details = soup.find_all('table', class_=staff_role)[0]
     for row in staff_details.find_all('tr'):
         detail = row.th.text
@@ -44,16 +49,36 @@ def get_staff_member_details(staff_member_url, staff_role):
     return details_dict['Rank'], details_dict['TV shows']
 
 
-def get_staff_member_list(driver, role, names, urls):
+def get_tv_show_staff_members(role, names, urls):
+    """
+    Given a role of a staff member, list of their names and their url pages
+    returns a list of StaffMember objects.
+    """
     staff_member_list = []
+    relevant_names = []
+    relevant_urls = []
     for name, url in zip(names, urls):
-        rank, number_of_tv_shows = get_staff_member_details(url, role)
-        titles = get_tv_shows_titles(driver, url)
-        staff_member_list.append(StaffMember(role, name, url, rank, number_of_tv_shows, titles))
+        key = (name, role)
+        if key in staff_member_instance_dict:
+            staff_member_list.append(staff_member_instance_dict[key])
+        else:
+            relevant_names.append(name)
+            relevant_urls.append(url)
+
+    responses = get_grequests_responses(relevant_urls)
+    for name, url, res in zip(relevant_names, relevant_urls, responses):
+        key = (name, role)
+        html_text = res.text
+        soup = BeautifulSoup(html_text, 'html.parser')
+        rank, number_of_tv_shows = get_staff_member_details(soup, role)
+        staff_member = StaffMember(role, name, rank, number_of_tv_shows)
+        staff_member_instance_dict[key] = staff_member
+        staff_member_list.append(staff_member_instance_dict[key])
     return staff_member_list
 
 
-def get_staff_members(driver, tv_soup, role):
+def get_staff_members(tv_soup, role):
+    """  """
     staff_member_dict = {'writer': ('Writers:', 'writer'), 'director': ('Directors:', 'director')}
     staff_member_tuple = staff_member_dict[role]
     staff_member_child = tv_soup.find(text=staff_member_tuple[0])
@@ -68,7 +93,7 @@ def get_staff_members(driver, tv_soup, role):
         staff_member_urls.append(url + a_tag['href'])
         staff_member_names.append(a_tag.text)
 
-    staff_members = get_staff_member_list(driver, staff_member_tuple[1], staff_member_names, staff_member_urls)
+    staff_members = get_tv_show_staff_members(staff_member_tuple[1], staff_member_names, staff_member_urls)
     return staff_members
 
 
@@ -84,6 +109,12 @@ def get_tv_shows_titles(driver, url):
     tv_shows_details, urls = get_tv_shows_details_and_urls(driver, url)
     # index 1 is the title index.
     return [details[1] for details in tv_shows_details if int(details[0].replace(",", "")) <= TWO_HUNDRED_FIFTY]
+
+
+def get_grequests_responses(urls):
+    my_requests = (grequests.get(u) for u in urls)
+    responses = grequests.map(my_requests)
+    return responses
 
 
 def get_tv_shows_details_and_urls(driver, url):
@@ -111,19 +142,54 @@ def get_tv_shows_details_and_urls(driver, url):
     return tv_shows_details, tv_series_page_urls
 
 
+def get_tv_show_list(tv_shows_urls, start, end, home_page_tv_shows_details, batch_size):
+    tv_shows_list = []
+    for index in range(start, end, batch_size):
+        responses = get_grequests_responses(tv_shows_urls[index:index + batch_size])
+        for i in range(batch_size):
+            tv_show_details, tv_show_url = home_page_tv_shows_details[index + i], tv_shows_urls[index + i]
+            res = responses[i]
+            tv_soup = BeautifulSoup(res.text, 'html.parser')
+            writers = get_staff_members(tv_soup, "writer")
+            directors = get_staff_members(tv_soup, "director")
+            tv_show = TvShow(*tv_show_details, writers, directors)
+            print(tv_show)
+            tv_shows_list.append(tv_show)
+    return tv_shows_list
+
+
+def scrape_ratingraph_parts(ranks=None, names=None):
+    start = datetime.now()
+    driver = get_headless_driver()
+    home_page_tv_shows_details, tv_shows_page_urls = get_tv_shows_details_and_urls(driver, URL)
+    batch_size = 100
+    remainder = len(ranks) % batch_size
+    whole = len(ranks) - remainder
+
+    whole_list = get_tv_show_list(tv_shows_page_urls, 0, whole, home_page_tv_shows_details, batch_size)
+    remainder_list = get_tv_show_list(tv_shows_page_urls, whole, len(ranks), home_page_tv_shows_details, remainder)
+    tv_shows_list = whole_list + remainder_list
+
+    driver.close()
+    end = datetime.now()
+    print(f"Data mining project checkpoint #1 took {end - start}")
+
+
 def main():
     start = datetime.now()
     driver = get_headless_driver()
     home_page_tv_shows_details, tv_shows_page_urls = get_tv_shows_details_and_urls(driver, URL)
     tv_shows_list = []
-    for tv_show_details, tv_show_url in zip(home_page_tv_shows_details, tv_shows_page_urls):
-        res = requests.get(tv_show_url)
-        tv_soup = BeautifulSoup(res.text, 'html.parser')
-        writers = get_staff_members(driver, tv_soup, "writer")
-        directors = get_staff_members(driver, tv_soup, "director")
-        tv_show = TvShow(*tv_show_details, writers, directors)
-        print(tv_show)
-        tv_shows_list.append(tv_show)
+    batch_size = 126
+    ranks = tv_shows_page_urls
+    remainder = len(ranks) % batch_size
+    whole = len(ranks) - remainder
+    print(f"whole - {whole}")
+    print(f"remainder - {remainder}")
+    whole_list = get_tv_show_list(tv_shows_page_urls, 0, whole, home_page_tv_shows_details, batch_size)
+    remainder_list = get_tv_show_list(tv_shows_page_urls, whole, len(ranks), home_page_tv_shows_details, remainder)
+
+    tv_shows_list = whole_list + remainder_list
 
     driver.close()
     end = datetime.now()
@@ -132,5 +198,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-    # html = requests.get("https://www.ratingraph.com/tv-shows/")
-    # print(html)
