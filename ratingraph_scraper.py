@@ -105,10 +105,11 @@ def select_250_entries(driver):
     sleep(SLEEP)
 
 
-def get_tv_shows_titles(driver, url):
-    tv_shows_details, urls = get_tv_shows_details_and_urls(driver, url)
-    # index 1 is the title index.
-    return [details[1] for details in tv_shows_details if int(details[0].replace(",", "")) <= TWO_HUNDRED_FIFTY]
+def get_rank_index_by_title(tv_shows_details, title):
+    titles = [details[1].lower() for details in tv_shows_details if int(details[0].replace(",", "")) <= TWO_HUNDRED_FIFTY]
+    if title not in titles:
+        return -1
+    return titles.index(title)
 
 
 def get_grequests_responses(urls):
@@ -158,16 +159,31 @@ def get_tv_show_list(tv_shows_urls, start, end, home_page_tv_shows_details, batc
     return tv_shows_list
 
 
-def scrape_ratingraph_parts(ranks=None, names=None):
+def scrape_ratingraph_parts(ranks=None, title=None):
     start = datetime.now()
     driver = get_headless_driver()
     home_page_tv_shows_details, tv_shows_page_urls = get_tv_shows_details_and_urls(driver, URL)
-    batch_size = 100
-    remainder = len(ranks) % batch_size
-    whole = len(ranks) - remainder
-
+    tv_shows_list = []
+    if ranks:
+        first_rank = ranks[0]
+        last_rank = ranks[1]
+        home_page_tv_shows_details = home_page_tv_shows_details[first_rank:last_rank]
+        tv_shows_page_urls = tv_shows_page_urls[first_rank:last_rank]
+    elif title:
+        titles = [details[1].lower() for details in home_page_tv_shows_details if int(details[0].replace(",", "")) <= TWO_HUNDRED_FIFTY]
+        if title.lower() not in titles:
+            return title
+        rank_index = titles.index(title.lower())
+        home_page_tv_shows_details = [home_page_tv_shows_details[rank_index]]
+        tv_shows_page_urls = [tv_shows_page_urls[rank_index]]
+    ranks_list = tv_shows_page_urls
+    batch_size = min(len(ranks_list), 125)
+    remainder = len(ranks_list) % batch_size
+    remainder = remainder if remainder else batch_size
+    whole = len(ranks_list) - remainder
     whole_list = get_tv_show_list(tv_shows_page_urls, 0, whole, home_page_tv_shows_details, batch_size)
-    remainder_list = get_tv_show_list(tv_shows_page_urls, whole, len(ranks), home_page_tv_shows_details, remainder)
+    remainder_list = get_tv_show_list(tv_shows_page_urls, whole, len(ranks_list), home_page_tv_shows_details, remainder)
+
     tv_shows_list = whole_list + remainder_list
 
     driver.close()
@@ -175,14 +191,40 @@ def scrape_ratingraph_parts(ranks=None, names=None):
     print(f"Data mining project checkpoint #1 took {end - start}")
 
 
+def cli_main():
+    parser = argparse.ArgumentParser(description='ratingraph-scraper.')
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument('--tv_shows_range', type=int, metavar=('start', 'end'), nargs=2, help='tv shows rank range 1-250]')
+    group.add_argument('--tv_show_rank', type=int, metavar='rank', help='tv show rank 1-250]')
+    group.add_argument('--title', type=str, metavar='movie_title', help='tv show title needs to be in format "title"')
+    group.add_argument('--staff_member', type=int, metavar='staff member', help='staff member information')
+
+    args = parser.parse_args()
+    if args.tv_shows_range:
+
+        ranks = args.tv_shows_range
+        ranks[0] = ranks[0] - 1
+        ranks[1] = ranks[1]
+        scrape_ratingraph_parts(ranks=ranks)
+    elif args.tv_show_rank:
+        scrape_ratingraph_parts(ranks=[args.tv_show_rank - 1, args.tv_show_rank])
+    elif args.title:
+        if scrape_ratingraph_parts(title=args.title):
+            print(f'The tv show {args.title} is not in the top 250 tv shows of ratingraph.')
+    # print("hi")
+    # if args.w:
+    #     print("good morning :)")
+
+
 def main():
     start = datetime.now()
     driver = get_headless_driver()
     home_page_tv_shows_details, tv_shows_page_urls = get_tv_shows_details_and_urls(driver, URL)
     tv_shows_list = []
-    batch_size = 126
+    batch_size = 125
     ranks = tv_shows_page_urls
     remainder = len(ranks) % batch_size
+    remainder = remainder if remainder else batch_size
     whole = len(ranks) - remainder
     print(f"whole - {whole}")
     print(f"remainder - {remainder}")
@@ -197,4 +239,5 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    cli_main()
+    # main()
