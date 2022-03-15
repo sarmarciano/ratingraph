@@ -36,7 +36,7 @@ def get_headless_driver():
 
 def get_staff_member_details(soup, staff_role):
     """
-    Given a BeautifulSoup object that represent the staff member web pag (soup), and the role of the staff member
+    Given a BeautifulSoup object that represent the staff member web page (soup), and the role of the staff member
     returns the staff member rank and the number of tv shows he/she worked on as a tuple (rank,tv_show).
     """
     details_dict = {'Rank': 0, 'TV shows': 0}
