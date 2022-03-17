@@ -36,7 +36,7 @@ def get_headless_driver():
 
 def get_staff_member_details(soup, staff_role):
     """
-    Given a BeautifulSoup object that represent the staff member web page (soup), and the role of the staff member
+    Given a BeautifulSoup object that represent the staff member web pag (soup), and the role of the staff member
     returns the staff member rank and the number of tv shows he/she worked on as a tuple (rank,tv_show).
     """
     details_dict = {'Rank': 0, 'TV shows': 0}
@@ -78,7 +78,10 @@ def get_tv_show_staff_members(role, names, urls):
 
 
 def get_staff_members(tv_soup, role):
-    """  """
+    """
+    Given a BeautifulSoup object of a specific tv-show and a roll, returns list of the staff members
+    with a specific role that participate this specific show as a list of StaffMember objects.
+    """
     staff_member_dict = {'writer': ('Writers:', 'writer'), 'director': ('Directors:', 'director')}
     staff_member_tuple = staff_member_dict[role]
     staff_member_child = tv_soup.find(text=staff_member_tuple[0])
@@ -98,7 +101,7 @@ def get_staff_members(tv_soup, role):
 
 
 def select_250_entries(driver):
-    # toplist_length -> was id
+    """ Given a selenium driver, selects the 250 entries option. """
     options_div = driver.find_elements(By.TAG_NAME, 'select')[-1]
     options_list = options_div.find_elements(By.TAG_NAME, 'option')
     options_list[TWO_HUNDRED_FIFTY_INDEX].click()
@@ -106,6 +109,7 @@ def select_250_entries(driver):
 
 
 def get_rank_index_by_title(tv_shows_details, title):
+    """ Returns the rank index of a specific tv-show title. """
     titles = [details[1].lower() for details in tv_shows_details if int(details[0].replace(",", "")) <= TWO_HUNDRED_FIFTY]
     if title not in titles:
         return -1
@@ -113,12 +117,14 @@ def get_rank_index_by_title(tv_shows_details, title):
 
 
 def get_grequests_responses(urls):
+    """ Given list of urls return their http responses list. """
     my_requests = (grequests.get(u) for u in urls)
     responses = grequests.map(my_requests)
     return responses
 
 
 def get_tv_shows_details_and_urls(driver, url):
+    """ Given a selenium driver and an url, returns a tuple of tv-shows details list and their page urls. """
     driver.get(url)
     select_250_entries(driver)
     html_text = driver.page_source
@@ -144,6 +150,10 @@ def get_tv_shows_details_and_urls(driver, url):
 
 
 def get_tv_show_list(tv_shows_urls, start, end, home_page_tv_shows_details, batch_size):
+    """
+    Given urls of tv-shows, range to scrape (start, end), tv-shows details and batch size, returns list of tv-shows
+    objects.
+    """
     tv_shows_list = []
     for index in range(start, end, batch_size):
         responses = get_grequests_responses(tv_shows_urls[index:index + batch_size])
@@ -160,10 +170,16 @@ def get_tv_show_list(tv_shows_urls, start, end, home_page_tv_shows_details, batc
 
 
 def scrape_ratingraph_parts(ranks=None, title=None):
+    """
+    Given ranks range as a list (ranks=[starting_rank - 1, ending_rank]) or tv show title return a list of tv-shows
+    objects.
+    """
     start = datetime.now()
     driver = get_headless_driver()
     home_page_tv_shows_details, tv_shows_page_urls = get_tv_shows_details_and_urls(driver, URL)
     tv_shows_list = []
+    if not ranks and not title:
+        return tv_shows_list
     if ranks:
         first_rank = ranks[0]
         last_rank = ranks[1]
@@ -172,7 +188,7 @@ def scrape_ratingraph_parts(ranks=None, title=None):
     elif title:
         titles = [details[1].lower() for details in home_page_tv_shows_details if int(details[0].replace(",", "")) <= TWO_HUNDRED_FIFTY]
         if title.lower() not in titles:
-            return title
+            return []
         rank_index = titles.index(title.lower())
         home_page_tv_shows_details = [home_page_tv_shows_details[rank_index]]
         tv_shows_page_urls = [tv_shows_page_urls[rank_index]]
@@ -189,19 +205,19 @@ def scrape_ratingraph_parts(ranks=None, title=None):
     driver.close()
     end = datetime.now()
     print(f"Data mining project checkpoint #1 took {end - start}")
+    return tv_shows_list
 
 
 def cli_main():
     parser = argparse.ArgumentParser(description='ratingraph-scraper.')
     group = parser.add_mutually_exclusive_group(required=True)
-    group.add_argument('--tv_shows_range', type=int, metavar=('start', 'end'), nargs=2, help='tv shows rank range 1-250]')
+    group.add_argument('--tv_shows_range', type=int, metavar=('start', 'end'), nargs=2, help='tv shows rank range 1-250')
     group.add_argument('--tv_show_rank', type=int, metavar='rank', help='tv show rank 1-250]')
     group.add_argument('--title', type=str, metavar='movie_title', help='tv show title needs to be in format "title"')
-    group.add_argument('--staff_member', type=int, metavar='staff member', help='staff member information')
+    # group.add_argument('--staff_member', type=int, metavar='staff member', help='staff member information')
 
     args = parser.parse_args()
     if args.tv_shows_range:
-
         ranks = args.tv_shows_range
         ranks[0] = ranks[0] - 1
         ranks[1] = ranks[1]
@@ -209,33 +225,14 @@ def cli_main():
     elif args.tv_show_rank:
         scrape_ratingraph_parts(ranks=[args.tv_show_rank - 1, args.tv_show_rank])
     elif args.title:
-        if scrape_ratingraph_parts(title=args.title):
+        if not scrape_ratingraph_parts(title=args.title):
             print(f'The tv show {args.title} is not in the top 250 tv shows of ratingraph.')
-    # print("hi")
     # if args.w:
     #     print("good morning :)")
 
 
 def main():
-    start = datetime.now()
-    driver = get_headless_driver()
-    home_page_tv_shows_details, tv_shows_page_urls = get_tv_shows_details_and_urls(driver, URL)
-    tv_shows_list = []
-    batch_size = 125
-    ranks = tv_shows_page_urls
-    remainder = len(ranks) % batch_size
-    remainder = remainder if remainder else batch_size
-    whole = len(ranks) - remainder
-    print(f"whole - {whole}")
-    print(f"remainder - {remainder}")
-    whole_list = get_tv_show_list(tv_shows_page_urls, 0, whole, home_page_tv_shows_details, batch_size)
-    remainder_list = get_tv_show_list(tv_shows_page_urls, whole, len(ranks), home_page_tv_shows_details, remainder)
-
-    tv_shows_list = whole_list + remainder_list
-
-    driver.close()
-    end = datetime.now()
-    print(f"Data mining project checkpoint #1 took {end - start}")
+    return scrape_ratingraph_parts(ranks=[0, 250])
 
 
 if __name__ == '__main__':
