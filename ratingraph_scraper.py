@@ -219,10 +219,15 @@ def cli_main():
     args = parser.parse_args()
     if args.tv_shows_range:
         ranks = args.tv_shows_range
-        ranks[0] = ranks[0] - 1
-        ranks[1] = ranks[1]
-        scrape_ratingraph_parts(ranks=ranks)
+        if (ranks[1] > ranks[0]) and (1 <= ranks[0] < 250) and (1 < ranks[1] <= 250):
+            ranks[0] = ranks[0] - 1
+            ranks[1] = ranks[1]
+            scrape_ratingraph_parts(ranks=ranks)
+        else:
+            print("The ranks must be in this format: [a, b] where b > a and they are both in the segment [1,250]")
     elif args.tv_show_rank:
+        if not (1 <= args.tv_show_rank <= 250):
+            print("The tv-show rank must be in the segment [1,250]")
         scrape_ratingraph_parts(ranks=[args.tv_show_rank - 1, args.tv_show_rank])
     elif args.title:
         if not scrape_ratingraph_parts(title=args.title):
