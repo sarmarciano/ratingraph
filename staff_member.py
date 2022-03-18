@@ -7,7 +7,7 @@ class StaffMember:
         self.nb_tv_shows = int(nb_tv_shows)
 
     def __str__(self):
-        return f'role - {self.role}, name {self.name}'
+        return str(self.__dict__)
 
     def __repr__(self):
         return f'role - {self.role}, name {self.name}'
