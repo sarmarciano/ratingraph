@@ -3,12 +3,13 @@
 ![alt text](https://i.imgur.com/6zM7JBq.png)
 
 Prerequisite of the project:
-- have mysql on the computer.
+- have mysql on the computer
 
 ## Installation steps:
 1. clone the repository
 2. install in the working directory `pip install -r requirements.txt`.
-3. execute in terminal `python ratingraph.py`
+3. enter in config.py and take actions from the #TODO (update username and password)
+4. execute in terminal `python ratingraph.py`
 
 The ratingraph website provides ranking and information about tv shows and their directors and writers.
 
