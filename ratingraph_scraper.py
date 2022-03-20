@@ -3,11 +3,9 @@ Assignment name - Data Mining project.
 Authors - Sarah Marciano, Alon Gabay.
 """
 import grequests
-import requests
 from staff_member import StaffMember
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
-from pprint import pprint
 from selenium import webdriver
 from bs4 import BeautifulSoup
 from tv_shows import TvShow
@@ -16,12 +14,8 @@ from time import sleep
 from datetime import datetime
 import argparse
 import sys
-from tqdm import tqdm
+from config import *
 
-UPPER_BOUND = 250
-TWO_HUNDRED_FIFTY_INDEX = 4
-SLEEP = 2
-URL = 'https://www.ratingraph.com/tv-shows'
 
 staff_member_instance_dict = dict()
 home_page_tv_shows_details = []
@@ -280,8 +274,6 @@ def cli_main():
             print(f'The tv show {args.title} is not in the top {UPPER_BOUND} tv shows of ratingraph.')
     elif args.staff_member:
         print_info_about_staff_member(args.staff_member)
-    # if args.w:
-    #     print("good morning :)")
 
 
 def main():
