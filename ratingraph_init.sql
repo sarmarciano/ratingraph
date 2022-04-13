@@ -1,6 +1,10 @@
 CREATE DATABASE IF NOT EXISTS ratingraph;
 USE ratingraph;
-CREATE TABLE IF NOT EXISTS tvshow (tv_show_rank INT NOT NULL, title VARCHAR(150), nb_seasons INT NOT NULL, nb_episodes INT NOT NULL, start_year INT NOT NULL, end_year INT, PRIMARY KEY (title, start_year));
-CREATE TABLE IF NOT EXISTS tvshow_genre (tvshow_title VARCHAR(150), start_year INT NOT NULL, genre VARCHAR(150) NOT NULL, PRIMARY KEY (tvshow_title, genre, start_year), FOREIGN KEY (tvshow_title, start_year) REFERENCES tvshow(title, start_year));
-CREATE TABLE IF NOT EXISTS staff_member (name VARCHAR(150) NOT NULL, role VARCHAR(150) NOT NULL, staff_member_rank INT NOT NULL, nb_tv_shows INT NOT NULL, PRIMARY KEY (name, role));
-CREATE TABLE IF NOT EXISTS tvshow_staff (name VARCHAR(150) NOT NULL, role VARCHAR(150) NOT NULL, tvshow_title VARCHAR(150), start_year INT NOT NULL, PRIMARY KEY (name, role, tvshow_title, start_year), FOREIGN KEY fk1 (name, role) REFERENCES staff_member(name, role), FOREIGN KEY (tvshow_title, start_year) REFERENCES tvshow(title, start_year));
+CREATE TABLE IF NOT EXISTS tvshow (tvshow_id INT AUTO_INCREMENT PRIMARY KEY, title VARCHAR(100), nb_seasons INT NOT NULL, nb_episodes INT NOT NULL, start_year INT NOT NULL, end_year INT, imdb_rating FLOAT, synopsis VARCHAR(1000));
+CREATE TABLE IF NOT EXISTS tvshow_rank (tvshow_id INT, tvshow_rank INT, rank_date DATE, PRIMARY KEY (tvshow_id, tvshow_rank), FOREIGN KEY (tvshow_id) REFERENCES tvshow(tvshow_id));
+CREATE TABLE IF NOT EXISTS genre (genre_id INT AUTO_INCREMENT PRIMARY KEY, genre_name VARCHAR(20));
+CREATE TABLE IF NOT EXISTS actor (actor_id INT AUTO_INCREMENT PRIMARY KEY, actor_name VARCHAR(30));
+CREATE TABLE IF NOT EXISTS tvshow_actor(actor_id INT, tvshow_id INT, PRIMARY KEY (actor_id, tvshow_id), FOREIGN KEY fk1 (actor_id) REFERENCES actor(actor_id), FOREIGN KEY (tvshow_id) REFERENCES tvshow(tvshow_id));
+CREATE TABLE IF NOT EXISTS tvshow_genre (genre_id INT, tvshow_id INT, PRIMARY KEY (tvshow_id, genre_id), FOREIGN KEY fk1 (genre_id) REFERENCES genre(genre_id), FOREIGN KEY (tvshow_id) REFERENCES tvshow(tvshow_id));
+CREATE TABLE IF NOT EXISTS staff_member (staff_member_id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(30) NOT NULL, role VARCHAR(10) NOT NULL, staff_member_rank INT NOT NULL, nb_tv_shows INT NOT NULL);
+CREATE TABLE IF NOT EXISTS tvshow_staff (staff_member_id INT, tvshow_id INT, PRIMARY KEY (staff_member_id, tvshow_id), FOREIGN KEY fk1 (staff_member_id) REFERENCES staff_member(staff_member_id), FOREIGN KEY (tvshow_id) REFERENCES tvshow(tvshow_id));

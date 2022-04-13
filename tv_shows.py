@@ -1,7 +1,8 @@
 class TvShow:
     """ This class represent a tv show. """
-    def __init__(self, rank, title, start_year, end_year, genres, nb_seasons, nb_episodes, writers, directors):
-        self.title = title
+    def __init__(self, rank, title, start_year, end_year, genres, nb_seasons, nb_episodes, writers, directors,
+                 actors, synopsis, imdb_rating):
+        self.title = title.title().replace('"', "'")
         self.rank = int(rank)
         self.genres = genres
         self.nb_seasons = int(nb_seasons)
@@ -10,6 +11,10 @@ class TvShow:
         self.end_year = int(end_year) if end_year.isdigit() else 0
         self.writers = writers if writers else []
         self.directors = directors if directors else []
+        self.actors = actors if actors else []
+        self.synopsis = synopsis.capitalize() if synopsis != 'N/A' else ''
+        self.synopsis = self.synopsis.replace('"', "'")
+        self.imdb_rating = -1.0 if imdb_rating == 'N/A' else float(imdb_rating)
 
     def __str__(self):
         return str(self.__dict__)

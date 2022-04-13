@@ -3,6 +3,7 @@ Assignment name - Data Mining project.
 Authors - Sarah Marciano, Alon Gabay.
 """
 import grequests
+
 from staff_member import StaffMember
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -15,18 +16,18 @@ from datetime import datetime
 import argparse
 import sys
 from config import *
+import json
+from database import update_tvshows, update_staff_member
 
-
+# Global variables
 staff_member_instance_dict = dict()
-home_page_tv_shows_details = []
-tv_shows_page_urls = []
 
 
 def get_headless_driver():
     """ Returns a headless selenium chrome driver. """
     chromedriver_autoinstaller.install()
     chrome_options = Options()
-    chrome_options.add_argument("--headless")
+    chrome_options.add_argument(HEADLESS)
     driver = webdriver.Chrome(options=chrome_options)
     return driver
 
@@ -36,14 +37,14 @@ def get_staff_member_details(soup, staff_role):
     Given a BeautifulSoup object that represent the staff member web pag (soup), and the role of the staff member
     returns the staff member rank and the number of tv shows he/she worked on as a tuple (rank,tv_show).
     """
-    details_dict = {'Rank': 0, 'TV shows': 0}
+    details_dict = {RANK: 0, SHOWS: 0}
     staff_details = soup.find_all('table', class_=staff_role)[0]
     for row in staff_details.find_all('tr'):
         detail = row.th.text
         if detail in details_dict.keys():
             details_dict[detail] = row.td.text
-    details_dict['TV shows'] = int(details_dict['TV shows'])
-    return details_dict['Rank'], details_dict['TV shows']
+    details_dict[SHOWS] = int(details_dict[SHOWS])
+    return details_dict[RANK], details_dict[SHOWS]
 
 
 def get_tv_show_staff_members(role, names, urls):
@@ -66,7 +67,7 @@ def get_tv_show_staff_members(role, names, urls):
     for name, url, res in zip(relevant_names, relevant_urls, responses):
         key = (name, role)
         html_text = res.text
-        soup = BeautifulSoup(html_text, 'html.parser')
+        soup = BeautifulSoup(html_text, PARSER)
         rank, number_of_tv_shows = get_staff_member_details(soup, role)
         staff_member = StaffMember(role, name, rank, number_of_tv_shows)
         staff_member_instance_dict[key] = staff_member
@@ -79,8 +80,7 @@ def get_staff_members(tv_soup, role):
     Given a BeautifulSoup object of a specific tv-show and a roll, returns list of the staff members
     with a specific role that participate this specific show as a list of StaffMember objects.
     """
-    staff_member_dict = {'writer': ('Writers:', 'writer'), 'director': ('Directors:', 'director')}
-    staff_member_tuple = staff_member_dict[role]
+    staff_member_tuple = STAFF_MEMBER_DICT[role]
     staff_member_child = tv_soup.find(text=staff_member_tuple[0])
     if not staff_member_child:
         return None
@@ -91,7 +91,7 @@ def get_staff_members(tv_soup, role):
     for a_tag in staff_member_a_elements:
         url = '/'.join(URL.split('/')[:-1])
         staff_member_urls.append(url + a_tag['href'])
-        staff_member_names.append(a_tag.text)
+        staff_member_names.append(a_tag.text.title())
 
     staff_members = get_tv_show_staff_members(staff_member_tuple[1], staff_member_names, staff_member_urls)
     return staff_members
@@ -117,12 +117,11 @@ def get_tv_shows_details_and_urls(driver, url):
     driver.get(url)
     select_250_entries(driver)
     html_text = driver.page_source
-    soup = BeautifulSoup(html_text, 'html.parser')
+    soup = BeautifulSoup(html_text, PARSER)
     table_list = soup.find_all("div", class_="dataTables_scrollBody")
     table = table_list[-1]
     tv_series_page_urls = []
     tv_shows_details = []
-    important_indices = {0, 2, 3, 4, 5, 6, 7}
     for i, row in enumerate(table.findAll('tr')[1:]):
         tv_show_args = []
         for index, cell in enumerate(row.findAll('td')):
@@ -130,9 +129,9 @@ def get_tv_shows_details_and_urls(driver, url):
             if children:
                 tv_page_url = children[0]['href']
                 tv_series_page_urls.append(tv_page_url)
-            tv_show_args.append(cell.text)
-        tv_show_args = [tv_show_args[j] for j in range(len(tv_show_args)) if j in important_indices]
-        tv_show_args[4] = tv_show_args[4].split(', ')
+            tv_show_args.append(cell.text.title())
+        tv_show_args = [tv_show_args[j] for j in range(len(tv_show_args)) if j in IMPORTANT_INDICES]
+        tv_show_args[GENRE_INDEX] = tv_show_args[GENRE_INDEX].split(', ')
 
         tv_shows_details.append(tv_show_args)
     return tv_shows_details, tv_series_page_urls
@@ -149,23 +148,22 @@ def get_tv_show_list(tv_shows_urls, start, end, home_page_tv_shows_details, batc
         for i in range(batch_size):
             tv_show_details, tv_show_url = home_page_tv_shows_details[index + i], tv_shows_urls[index + i]
             res = responses[i]
-            tv_soup = BeautifulSoup(res.text, 'html.parser')
-            writers = get_staff_members(tv_soup, "writer")
-            directors = get_staff_members(tv_soup, "director")
-            tv_show = TvShow(*tv_show_details, writers, directors)
+            tv_soup = BeautifulSoup(res.text, PARSER)
+            writers = get_staff_members(tv_soup, WRITER)
+            directors = get_staff_members(tv_soup, DIRECTOR)
+            actors, synopsis, imdb_rating = get_api_data(tv_show_details[TITLE])
+            tv_show = TvShow(*tv_show_details, writers, directors, actors, synopsis, imdb_rating)
             print(tv_show)
             print()
             tv_shows_list.append(tv_show)
     return tv_shows_list
 
 
-def print_info_about_staff_member(name):
+def get_staff_member_url_list(name):
     """
-    Given a staff member name prints information about him/her and the tv-shows he/she has been part of.
-    For now the staff member can be writer/director or both and the resulting output will refer to him/her in all
-    his/hers roles.
+    Given a name search in the search bar and returns the url list of the staff member that it represent.
+    Returns an empty list in case of more than 2 results or in case of 0 results.
     """
-    start = datetime.now()
     driver = get_headless_driver()
     driver.get(URL)
     search_div = driver.find_elements(By.CLASS_NAME, "search")[0]
@@ -179,43 +177,53 @@ def print_info_about_staff_member(name):
     if not a_tags:
         print(f'staff member {name} does not exist in ratingraph website.')
         return []
-    elif len(a_tags) > 2:
+    elif len(a_tags) > UNIQUE_THRESHOLD:
         print(f'staff member {name} is not a unique staff member, please be more specific in your search.')
         return []
     urls = [a_elem.get_attribute('href') for a_elem in a_tags]
-    for url in urls:
-        if url.find("directors") != -1:
-            role = "director"
-        else:
-            role = "writer"
-        select_250_entries(driver)
-        s_member = get_tv_show_staff_members(role, [name], [url])[0]
-        print(s_member)
-        tv_shows_details, tv_series_page_urls = get_tv_shows_details_and_urls(driver, url)
-        tv_shows_ranks_titles = [[int(details[0].replace(',', '')), details[1]] for details in tv_shows_details]
-        relevant_tv_shows_ranks_titles = [[ranks_titles[0], ranks_titles[1]] for ranks_titles in tv_shows_ranks_titles if ranks_titles[0] <= UPPER_BOUND]
-        relevant_tv_shows_ranks_titles = sorted(relevant_tv_shows_ranks_titles, key=lambda x: x[0])
-        if relevant_tv_shows_ranks_titles:
-            print(role)
-            for rank, title in relevant_tv_shows_ranks_titles:
-                print(f'rank: {rank}, title: {title}')
-            print()
-
     driver.close()
-    end = datetime.now()
-    print(f"Data mining project checkpoint #2 took {end - start}")
+    return urls
 
 
-def scrape_ratingraph_parts(ranks=None, title=None):
+def get_staff_member_info(name):
     """
-    Given ranks range as a list (ranks=[starting_rank - 1, ending_rank]) or tv show title return a list of tv-shows
-    objects.
+    Given a staff member name prints information about him/her and the tv-shows he/she has been part of.
+    For now the staff member can be writer/director or both and the resulting output will refer to him/her in all
+    his/hers roles.
     """
     start = datetime.now()
     driver = get_headless_driver()
-    global home_page_tv_shows_details, tv_shows_page_urls
-    if not home_page_tv_shows_details and not tv_shows_page_urls:
-        home_page_tv_shows_details, tv_shows_page_urls = get_tv_shows_details_and_urls(driver, URL)
+    urls = get_staff_member_url_list(name)
+    s_members = []
+    worked_on_top_250 = False
+    for url in urls:
+        role = DIRECTOR if url.find("directors") != -1 else WRITER
+        s_member = get_tv_show_staff_members(role, [name], [url])[0]
+        s_members.append(s_member)
+        print(s_member)
+        tv_shows_details, tv_series_page_urls = get_tv_shows_details_and_urls(driver, url)
+        tv_shows_ranks_titles = [[int(details[0].replace(',', '')), details[1]] for details in tv_shows_details]
+        relevant_tv_shows_ranks_titles = [[ranks_titles[0], ranks_titles[1]] for ranks_titles in tv_shows_ranks_titles
+                                          if ranks_titles[0] <= UPPER_BOUND]
+        relevant_tv_shows_ranks_titles = sorted(relevant_tv_shows_ranks_titles, key=lambda x: x[0])
+        if relevant_tv_shows_ranks_titles:
+            worked_on_top_250 = True
+            print('\n' + role)
+            for rank, title in relevant_tv_shows_ranks_titles:
+                print(f'rank: {rank}, title: {title}')
+    driver.close()
+    print(f"Data mining project checkpoint #2 took {datetime.now() - start}")
+    if not worked_on_top_250:
+        print(f'{name} is not a staff member in any of the top 250 tv shows.')
+        return []
+    return s_members
+
+
+def scrape_ratingraph_parts(ranks=None, title=None):
+    """ Given a range of ranks ([starting_rank - 1, ending_rank]) or tv show title return a list of tv-shows objects."""
+    start = datetime.now()
+    driver = get_headless_driver()
+    home_page_tv_shows_details, tv_shows_page_urls = get_tv_shows_details_and_urls(driver, URL)
     tv_shows_list = []
     if not ranks and not title:
         return tv_shows_list
@@ -225,64 +233,96 @@ def scrape_ratingraph_parts(ranks=None, title=None):
         home_page_tv_shows_details = home_page_tv_shows_details[first_rank:last_rank]
         tv_shows_page_urls = tv_shows_page_urls[first_rank:last_rank]
     elif title:
-        titles = [details[1].lower() for details in home_page_tv_shows_details if int(details[0].replace(",", "")) <= UPPER_BOUND]
-        if title.lower() not in titles:
+        titles = [details[1].title() for details in home_page_tv_shows_details
+                  if int(details[0].replace(",", "")) <= UPPER_BOUND]
+        if title.title() not in titles:
             return []
-        rank_index = titles.index(title.lower())
+        rank_index = titles.index(title.title())
         home_page_tv_shows_details = [home_page_tv_shows_details[rank_index]]
         tv_shows_page_urls = [tv_shows_page_urls[rank_index]]
     ranks_list = tv_shows_page_urls
     batch_size = min(len(ranks_list), UPPER_BOUND // 2)
-    remainder = len(ranks_list) % batch_size
-    remainder = remainder if remainder else batch_size
+    remainder = len(ranks_list) % batch_size if len(ranks_list) % batch_size else batch_size
     whole = len(ranks_list) - remainder
     whole_list = get_tv_show_list(tv_shows_page_urls, 0, whole, home_page_tv_shows_details, batch_size)
     remainder_list = get_tv_show_list(tv_shows_page_urls, whole, len(ranks_list), home_page_tv_shows_details, remainder)
-
     tv_shows_list = whole_list + remainder_list
-
     driver.close()
-    end = datetime.now()
-    print(f"Data mining project checkpoint #1 took {end - start}")
+    print(f"Data mining project checkpoint #1 took {datetime.now() - start}")
     return tv_shows_list
+
+
+def get_api_data(title):
+    title = title.replace(' ', '+')
+    query = API_BASE_URL + title + API_KEY
+    res_list = get_grequests_responses([query])
+    res = res_list[0]
+    if res.status_code != OK:
+        print(f'Could not request omdbapi website - status code - {res.status_code}')
+        return [], '', -1.0
+    details = json.loads(res_list[0].text)
+    if not details.get('Actors'):
+        return [], '', -1.0
+    actor_list = details['Actors'].split(', ')
+    return actor_list, details['Plot'], details['imdbRating']
 
 
 def cli_main():
     """ Cli option for checkpoint 2 can scrap data by terms as explain in -h help command. """
     parser = argparse.ArgumentParser(description='ratingraph-scraper.')
     group = parser.add_mutually_exclusive_group(required=True)
-    group.add_argument('--tv_shows_range', type=int, metavar=('start', 'end'), nargs=2, help=f'tv shows rank range 1-{UPPER_BOUND}')
+    group.add_argument('--tv_shows_range', type=int, metavar=('start', 'end'), nargs=2,
+                       help=f'tv shows rank range 1-{UPPER_BOUND}')
     group.add_argument('--tv_show_rank', type=int, metavar='rank', help=f'tv show rank 1-{UPPER_BOUND}')
-    group.add_argument('--title', type=str, metavar='movie_title', help='tv show title needs to be in format "title"')
-    group.add_argument('--staff_member', type=str, metavar='name', help='staff member information can be writer/director or both')
-
+    group.add_argument('--title', type=str, metavar='tvshow_title', help='tv show title needs to be in format "title"')
+    group.add_argument('--staff_member', type=str, metavar='name',
+                       help='staff member information can be writer/director or both')
     args = parser.parse_args()
     if args.tv_shows_range:
         ranks = args.tv_shows_range
         if (ranks[1] > ranks[0]) and (1 <= ranks[0] < UPPER_BOUND) and (1 < ranks[1] <= UPPER_BOUND):
-            ranks[0] = ranks[0] - 1
-            ranks[1] = ranks[1]
-            scrape_ratingraph_parts(ranks=ranks)
+            return scrape_ratingraph_parts(ranks=[ranks[0] - 1, ranks[1]])
         else:
             print("The ranks must be in this format: [a, b] where b > a and they are both in the segment [1,250]")
+            return []
     elif args.tv_show_rank:
         if not (1 <= args.tv_show_rank <= UPPER_BOUND):
             print("The tv-show rank must be in the segment [1,250]")
-        scrape_ratingraph_parts(ranks=[args.tv_show_rank - 1, args.tv_show_rank])
+        return scrape_ratingraph_parts(ranks=[args.tv_show_rank - 1, args.tv_show_rank])
     elif args.title:
-        if not scrape_ratingraph_parts(title=args.title):
+        result = scrape_ratingraph_parts(title=args.title.title())
+        if not result:
             print(f'The tv show {args.title} is not in the top {UPPER_BOUND} tv shows of ratingraph.')
+        return result
     elif args.staff_member:
-        print_info_about_staff_member(args.staff_member)
+        return get_staff_member_info(args.staff_member.title())
 
 
 def main():
-    return scrape_ratingraph_parts(ranks=[0, UPPER_BOUND])
+    """
+    Scraping up to the predetermined upper bound (default: 250) tv shows from https://www.ratingraph.com/tv-shows/ .
+    """
+    # UPPER_BOUND
+    upper_bound = 1
+    return scrape_ratingraph_parts(ranks=[0, upper_bound])
 
 
 if __name__ == '__main__':
+    # Every update is part of the third checkpoint.
     if len(sys.argv) == 1:
-        main()
+        # First checkpoint
+        tv_shows = main()
+        update_tvshows(tv_shows=tv_shows)
     else:
-        cli_main()
+        # Second checkpoint
+        info = cli_main()
+        if info:
+            if isinstance(info[0], TvShow):
+                tv_shows = info
+                update_tvshows(tv_shows)
+                pass
+            elif isinstance(info[0], StaffMember):
+                for st_member in info:
+                    update_staff_member(st_member)
+
 
