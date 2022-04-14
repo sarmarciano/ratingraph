@@ -1,5 +1,5 @@
 class StaffMember:
-    """ This class represent a member of a tv show staff member """
+    """ This class represents a member of a tv show staff member """
     def __init__(self, role, name, rank, nb_tv_shows):
         self.role = role.title()
         self.name = name.title()

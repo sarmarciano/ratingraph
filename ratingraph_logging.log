@@ -8,3 +8,762 @@
 2022-04-14 16:09:43,544-INFO-FILE:ratingraph_scraper.py-FUNC:scrape_ratingraph_parts-LINE:274-Data mining project checkpoint #1 took 0:00:13.708374
 2022-04-14 16:09:43,589-INFO-FILE:database.py-FUNC:update_tvshows-LINE:243-Details about Chernobyl inserted successfully to all the relevant tables.
 2022-04-14 16:09:43,589-INFO-FILE:database.py-FUNC:update_tvshows-LINE:245-Data mining project checkpoint #3, updating database finished successfully
+2022-04-14 17:14:58,474-INFO-FILE:utils.py-FUNC:download_chromedriver-LINE:235-Chromedriver is already installed.
+2022-04-14 17:15:11,949-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-1-"Chernobyl"was successfully scraped from ratingraph.
+2022-04-14 17:15:11,992-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-1-"Chernobyl" scraped from API.
+2022-04-14 17:15:12,055-INFO-FILE:ratingraph_scraper.py-FUNC:scrape_ratingraph_parts-LINE:272-Data mining project checkpoint #1 took 0:00:14.492464
+2022-04-14 17:15:12,097-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Chernobyl inserted successfully to all the relevant tables.
+2022-04-14 17:15:12,097-INFO-FILE:database.py-FUNC:update_tvshows-LINE:243-Data mining project checkpoint #3, updating database finished successfully
+2022-04-14 17:15:23,854-INFO-FILE:utils.py-FUNC:download_chromedriver-LINE:235-Chromedriver is already installed.
+2022-04-14 17:15:40,477-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-1-"Chernobyl"was successfully scraped from ratingraph.
+2022-04-14 17:15:40,507-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-1-"Chernobyl" scraped from API.
+2022-04-14 17:15:42,034-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-2-"Game Of Thrones"was successfully scraped from ratingraph.
+2022-04-14 17:15:42,062-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-2-"Game Of Thrones" scraped from API.
+2022-04-14 17:15:43,399-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-3-"Black Mirror"was successfully scraped from ratingraph.
+2022-04-14 17:15:43,427-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-3-"Black Mirror" scraped from API.
+2022-04-14 17:15:44,576-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-4-"Sherlock"was successfully scraped from ratingraph.
+2022-04-14 17:15:44,608-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-4-"Sherlock" scraped from API.
+2022-04-14 17:15:45,939-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-5-"Breaking Bad"was successfully scraped from ratingraph.
+2022-04-14 17:15:45,970-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-5-"Breaking Bad" scraped from API.
+2022-04-14 17:15:47,230-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-6-"The Mandalorian"was successfully scraped from ratingraph.
+2022-04-14 17:15:47,259-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-6-"The Mandalorian" scraped from API.
+2022-04-14 17:15:48,385-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-7-"Attack On Titan"was successfully scraped from ratingraph.
+2022-04-14 17:15:48,417-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-7-"Attack On Titan" scraped from API.
+2022-04-14 17:15:49,531-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-8-"Loki"was successfully scraped from ratingraph.
+2022-04-14 17:15:49,586-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-8-"Loki" scraped from API.
+2022-04-14 17:15:50,155-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-9-"Wandavision"was successfully scraped from ratingraph.
+2022-04-14 17:15:50,181-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-9-"Wandavision" scraped from API.
+2022-04-14 17:15:50,196-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-10-"Dhindora"was successfully scraped from ratingraph.
+2022-04-14 17:15:50,222-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-10-"Dhindora" scraped from API.
+2022-04-14 17:15:51,318-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-11-"Stranger Things"was successfully scraped from ratingraph.
+2022-04-14 17:15:51,364-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-11-"Stranger Things" scraped from API.
+2022-04-14 17:15:51,937-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-12-"The Book Of Boba Fett"was successfully scraped from ratingraph.
+2022-04-14 17:15:51,961-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-12-"The Book Of Boba Fett" scraped from API.
+2022-04-14 17:15:53,128-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-13-"Dark"was successfully scraped from ratingraph.
+2022-04-14 17:15:53,155-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-13-"Dark" scraped from API.
+2022-04-14 17:15:53,717-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-14-"Arcane"was successfully scraped from ratingraph.
+2022-04-14 17:15:53,747-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-14-"Arcane" scraped from API.
+2022-04-14 17:15:54,892-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-15-"The Witcher"was successfully scraped from ratingraph.
+2022-04-14 17:15:54,920-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-15-"The Witcher" scraped from API.
+2022-04-14 17:15:56,317-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-16-"Westworld"was successfully scraped from ratingraph.
+2022-04-14 17:15:56,348-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-16-"Westworld" scraped from API.
+2022-04-14 17:15:57,507-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-17-"Moon Knight"was successfully scraped from ratingraph.
+2022-04-14 17:15:57,543-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-17-"Moon Knight" scraped from API.
+2022-04-14 17:15:58,129-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-18-"The Falcon And The Winter Soldier"was successfully scraped from ratingraph.
+2022-04-14 17:15:58,161-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-18-"The Falcon And The Winter Soldier" scraped from API.
+2022-04-14 17:15:59,375-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-19-"True Detective"was successfully scraped from ratingraph.
+2022-04-14 17:15:59,418-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-19-"True Detective" scraped from API.
+2022-04-14 17:16:00,694-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-20-"Rick And Morty"was successfully scraped from ratingraph.
+2022-04-14 17:16:00,722-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-20-"Rick And Morty" scraped from API.
+2022-04-14 17:16:00,732-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-21-"Squid Game"was successfully scraped from ratingraph.
+2022-04-14 17:16:00,756-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-21-"Squid Game" scraped from API.
+2022-04-14 17:16:01,367-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-22-"What If...?"was successfully scraped from ratingraph.
+2022-04-14 17:16:01,408-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-22-"What If...?" scraped from API.
+2022-04-14 17:16:01,422-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-23-"The Heroes"was successfully scraped from ratingraph.
+2022-04-14 17:16:01,456-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-23-"The Heroes" scraped from API.
+2022-04-14 17:16:02,567-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-24-"The Queen'S Gambit"was successfully scraped from ratingraph.
+2022-04-14 17:16:02,596-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-24-"The Queen'S Gambit" scraped from API.
+2022-04-14 17:16:03,808-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-25-"The Boys"was successfully scraped from ratingraph.
+2022-04-14 17:16:03,840-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-25-"The Boys" scraped from API.
+2022-04-14 17:16:04,949-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-26-"Better Call Saul"was successfully scraped from ratingraph.
+2022-04-14 17:16:04,979-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-26-"Better Call Saul" scraped from API.
+2022-04-14 17:16:06,141-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-27-"Mr. Robot"was successfully scraped from ratingraph.
+2022-04-14 17:16:06,188-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-27-"Mr. Robot" scraped from API.
+2022-04-14 17:16:07,498-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-28-"Daredevil"was successfully scraped from ratingraph.
+2022-04-14 17:16:07,528-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-28-"Daredevil" scraped from API.
+2022-04-14 17:16:08,775-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-29-"Love, Death & Robots"was successfully scraped from ratingraph.
+2022-04-14 17:16:08,804-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-29-"Love, Death & Robots" scraped from API.
+2022-04-14 17:16:09,877-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-30-"Hawkeye"was successfully scraped from ratingraph.
+2022-04-14 17:16:09,902-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-30-"Hawkeye" scraped from API.
+2022-04-14 17:16:11,285-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-31-"The Walking Dead"was successfully scraped from ratingraph.
+2022-04-14 17:16:11,314-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-31-"The Walking Dead" scraped from API.
+2022-04-14 17:16:12,422-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-32-"The Haunting Of Hill House"was successfully scraped from ratingraph.
+2022-04-14 17:16:12,451-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-32-"The Haunting Of Hill House" scraped from API.
+2022-04-14 17:16:13,590-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-33-"Dexter: New Blood"was successfully scraped from ratingraph.
+2022-04-14 17:16:13,628-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-33-"Dexter: New Blood" scraped from API.
+2022-04-14 17:16:14,854-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-34-"Band Of Brothers"was successfully scraped from ratingraph.
+2022-04-14 17:16:14,883-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-34-"Band Of Brothers" scraped from API.
+2022-04-14 17:16:14,893-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-35-"Aspirants"was successfully scraped from ratingraph.
+2022-04-14 17:16:14,921-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-35-"Aspirants" scraped from API.
+2022-04-14 17:16:16,042-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-36-"Watchmen"was successfully scraped from ratingraph.
+2022-04-14 17:16:16,066-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-36-"Watchmen" scraped from API.
+2022-04-14 17:16:17,174-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-37-"Paranormal"was successfully scraped from ratingraph.
+2022-04-14 17:16:17,207-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-37-"Paranormal" scraped from API.
+2022-04-14 17:16:17,775-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-38-"Invincible"was successfully scraped from ratingraph.
+2022-04-14 17:16:17,814-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-38-"Invincible" scraped from API.
+2022-04-14 17:16:18,966-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-39-"Peaky Blinders"was successfully scraped from ratingraph.
+2022-04-14 17:16:18,994-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-39-"Peaky Blinders" scraped from API.
+2022-04-14 17:16:20,092-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-40-"The Wheel Of Time"was successfully scraped from ratingraph.
+2022-04-14 17:16:20,124-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-40-"The Wheel Of Time" scraped from API.
+2022-04-14 17:16:21,270-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-41-"When They See Us"was successfully scraped from ratingraph.
+2022-04-14 17:16:21,299-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-41-"When They See Us" scraped from API.
+2022-04-14 17:16:22,537-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-42-"Hannibal"was successfully scraped from ratingraph.
+2022-04-14 17:16:22,562-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-42-"Hannibal" scraped from API.
+2022-04-14 17:16:23,763-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-43-"Euphoria"was successfully scraped from ratingraph.
+2022-04-14 17:16:23,799-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-43-"Euphoria" scraped from API.
+2022-04-14 17:16:24,540-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-44-"Fargo"was successfully scraped from ratingraph.
+2022-04-14 17:16:24,563-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-44-"Fargo" scraped from API.
+2022-04-14 17:16:25,171-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-45-"Money Heist"was successfully scraped from ratingraph.
+2022-04-14 17:16:25,196-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-45-"Money Heist" scraped from API.
+2022-04-14 17:16:26,432-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-46-"Peacemaker"was successfully scraped from ratingraph.
+2022-04-14 17:16:26,459-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-46-"Peacemaker" scraped from API.
+2022-04-14 17:16:27,695-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-47-"The Punisher"was successfully scraped from ratingraph.
+2022-04-14 17:16:27,723-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-47-"The Punisher" scraped from API.
+2022-04-14 17:16:29,028-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-48-"The Sopranos"was successfully scraped from ratingraph.
+2022-04-14 17:16:29,051-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-48-"The Sopranos" scraped from API.
+2022-04-14 17:16:30,341-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-49-"Lost"was successfully scraped from ratingraph.
+2022-04-14 17:16:30,375-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-49-"Lost" scraped from API.
+2022-04-14 17:16:31,495-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-50-"The Leftovers"was successfully scraped from ratingraph.
+2022-04-14 17:16:31,536-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-50-"The Leftovers" scraped from API.
+2022-04-14 17:16:32,714-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-51-"Mindhunter"was successfully scraped from ratingraph.
+2022-04-14 17:16:32,740-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-51-"Mindhunter" scraped from API.
+2022-04-14 17:16:32,751-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-52-"Mare Of Easttown"was successfully scraped from ratingraph.
+2022-04-14 17:16:32,782-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-52-"Mare Of Easttown" scraped from API.
+2022-04-14 17:16:33,944-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-53-"Dexter"was successfully scraped from ratingraph.
+2022-04-14 17:16:33,969-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-53-"Dexter" scraped from API.
+2022-04-14 17:16:35,047-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-54-"Narcos"was successfully scraped from ratingraph.
+2022-04-14 17:16:35,088-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-54-"Narcos" scraped from API.
+2022-04-14 17:16:36,660-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-55-"Doctor Who"was successfully scraped from ratingraph.
+2022-04-14 17:16:36,689-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-55-"Doctor Who" scraped from API.
+2022-04-14 17:16:36,697-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-56-"Not Me"was successfully scraped from ratingraph.
+2022-04-14 17:16:36,722-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-56-"Not Me" scraped from API.
+2022-04-14 17:16:37,902-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-57-"Firefly"was successfully scraped from ratingraph.
+2022-04-14 17:16:37,937-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-57-"Firefly" scraped from API.
+2022-04-14 17:16:39,194-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-58-"Lucifer"was successfully scraped from ratingraph.
+2022-04-14 17:16:39,223-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-58-"Lucifer" scraped from API.
+2022-04-14 17:16:40,651-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-59-"Friends"was successfully scraped from ratingraph.
+2022-04-14 17:16:40,677-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-59-"Friends" scraped from API.
+2022-04-14 17:16:41,804-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-60-"Twin Peaks"was successfully scraped from ratingraph.
+2022-04-14 17:16:41,843-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-60-"Twin Peaks" scraped from API.
+2022-04-14 17:16:43,027-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-61-"Ted Lasso"was successfully scraped from ratingraph.
+2022-04-14 17:16:43,056-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-61-"Ted Lasso" scraped from API.
+2022-04-14 17:16:44,169-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-62-"Big Little Lies"was successfully scraped from ratingraph.
+2022-04-14 17:16:44,203-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-62-"Big Little Lies" scraped from API.
+2022-04-14 17:16:45,354-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-63-"Maigret"was successfully scraped from ratingraph.
+2022-04-14 17:16:45,381-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-63-"Maigret" scraped from API.
+2022-04-14 17:16:46,582-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-64-"Ozark"was successfully scraped from ratingraph.
+2022-04-14 17:16:46,605-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-64-"Ozark" scraped from API.
+2022-04-14 17:16:48,411-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-65-"The Office"was successfully scraped from ratingraph.
+2022-04-14 17:16:48,438-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-65-"The Office" scraped from API.
+2022-04-14 17:16:49,563-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-66-"The Night Of"was successfully scraped from ratingraph.
+2022-04-14 17:16:49,589-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-66-"The Night Of" scraped from API.
+2022-04-14 17:16:50,757-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-67-"Sense8"was successfully scraped from ratingraph.
+2022-04-14 17:16:50,785-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-67-"Sense8" scraped from API.
+2022-04-14 17:16:51,408-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-68-"Sex Education"was successfully scraped from ratingraph.
+2022-04-14 17:16:51,443-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-68-"Sex Education" scraped from API.
+2022-04-14 17:16:52,753-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-69-"Twin Peaks"was successfully scraped from ratingraph.
+2022-04-14 17:16:52,778-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-69-"Twin Peaks" scraped from API.
+2022-04-14 17:16:53,941-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-70-"Vikings"was successfully scraped from ratingraph.
+2022-04-14 17:16:53,964-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-70-"Vikings" scraped from API.
+2022-04-14 17:16:55,103-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-71-"The Crown"was successfully scraped from ratingraph.
+2022-04-14 17:16:55,127-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-71-"The Crown" scraped from API.
+2022-04-14 17:16:56,449-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-72-"Avatar: The Last Airbender"was successfully scraped from ratingraph.
+2022-04-14 17:16:56,478-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-72-"Avatar: The Last Airbender" scraped from API.
+2022-04-14 17:16:57,611-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-73-"Succession"was successfully scraped from ratingraph.
+2022-04-14 17:16:57,636-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-73-"Succession" scraped from API.
+2022-04-14 17:16:59,296-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-74-"Supernatural"was successfully scraped from ratingraph.
+2022-04-14 17:16:59,324-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-74-"Supernatural" scraped from API.
+2022-04-14 17:17:00,437-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-75-"Dekalog"was successfully scraped from ratingraph.
+2022-04-14 17:17:00,464-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-75-"Dekalog" scraped from API.
+2022-04-14 17:17:01,604-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-76-"Bojack Horseman"was successfully scraped from ratingraph.
+2022-04-14 17:17:01,632-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-76-"Bojack Horseman" scraped from API.
+2022-04-14 17:17:02,717-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-77-"The Umbrella Academy"was successfully scraped from ratingraph.
+2022-04-14 17:17:02,743-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-77-"The Umbrella Academy" scraped from API.
+2022-04-14 17:17:03,976-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-78-"House Of Cards"was successfully scraped from ratingraph.
+2022-04-14 17:17:04,010-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-78-"House Of Cards" scraped from API.
+2022-04-14 17:17:05,121-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-79-"Spartacus: Gods Of The Arena"was successfully scraped from ratingraph.
+2022-04-14 17:17:05,150-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-79-"Spartacus: Gods Of The Arena" scraped from API.
+2022-04-14 17:17:05,757-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-80-"The Defenders"was successfully scraped from ratingraph.
+2022-04-14 17:17:05,783-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-80-"The Defenders" scraped from API.
+2022-04-14 17:17:07,005-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-81-"The Wire"was successfully scraped from ratingraph.
+2022-04-14 17:17:07,031-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-81-"The Wire" scraped from API.
+2022-04-14 17:17:08,181-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-82-"Fleabag"was successfully scraped from ratingraph.
+2022-04-14 17:17:08,205-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-82-"Fleabag" scraped from API.
+2022-04-14 17:17:08,773-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-83-"Demon Slayer: Kimetsu No Yaiba"was successfully scraped from ratingraph.
+2022-04-14 17:17:08,798-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-83-"Demon Slayer: Kimetsu No Yaiba" scraped from API.
+2022-04-14 17:17:09,885-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-84-"Bodyguard"was successfully scraped from ratingraph.
+2022-04-14 17:17:09,910-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-84-"Bodyguard" scraped from API.
+2022-04-14 17:17:10,459-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-85-"The Last Dance"was successfully scraped from ratingraph.
+2022-04-14 17:17:10,488-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-85-"The Last Dance" scraped from API.
+2022-04-14 17:17:11,650-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-86-"Person Of Interest"was successfully scraped from ratingraph.
+2022-04-14 17:17:11,681-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-86-"Person Of Interest" scraped from API.
+2022-04-14 17:17:12,248-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-87-"Dracula"was successfully scraped from ratingraph.
+2022-04-14 17:17:12,274-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-87-"Dracula" scraped from API.
+2022-04-14 17:17:13,777-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-88-"Community"was successfully scraped from ratingraph.
+2022-04-14 17:17:13,801-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-88-"Community" scraped from API.
+2022-04-14 17:17:14,944-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-89-"The Haunting Of Bly Manor"was successfully scraped from ratingraph.
+2022-04-14 17:17:14,972-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-89-"The Haunting Of Bly Manor" scraped from API.
+2022-04-14 17:17:16,344-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-90-"Arrow"was successfully scraped from ratingraph.
+2022-04-14 17:17:16,372-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-90-"Arrow" scraped from API.
+2022-04-14 17:17:17,525-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-91-"The Handmaid'S Tale"was successfully scraped from ratingraph.
+2022-04-14 17:17:17,551-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-91-"The Handmaid'S Tale" scraped from API.
+2022-04-14 17:17:18,190-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-92-"The 100"was successfully scraped from ratingraph.
+2022-04-14 17:17:18,227-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-92-"The 100" scraped from API.
+2022-04-14 17:17:18,237-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-93-"Planet Earth Ii"was successfully scraped from ratingraph.
+2022-04-14 17:17:18,262-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-93-"Planet Earth Ii" scraped from API.
+2022-04-14 17:17:19,472-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-94-"Prison Break"was successfully scraped from ratingraph.
+2022-04-14 17:17:19,498-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-94-"Prison Break" scraped from API.
+2022-04-14 17:17:20,730-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-95-"Cobra Kai"was successfully scraped from ratingraph.
+2022-04-14 17:17:20,781-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-95-"Cobra Kai" scraped from API.
+2022-04-14 17:17:21,851-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-96-"Spartacus"was successfully scraped from ratingraph.
+2022-04-14 17:17:21,877-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-96-"Spartacus" scraped from API.
+2022-04-14 17:17:23,076-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-97-"How I Met Your Mother"was successfully scraped from ratingraph.
+2022-04-14 17:17:23,107-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-97-"How I Met Your Mother" scraped from API.
+2022-04-14 17:17:24,366-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-98-"American Horror Story"was successfully scraped from ratingraph.
+2022-04-14 17:17:24,395-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-98-"American Horror Story" scraped from API.
+2022-04-14 17:17:24,963-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-99-"Death Note"was successfully scraped from ratingraph.
+2022-04-14 17:17:25,023-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-99-"Death Note" scraped from API.
+2022-04-14 17:17:26,153-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-100-"The Outsider"was successfully scraped from ratingraph.
+2022-04-14 17:17:26,179-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-100-"The Outsider" scraped from API.
+2022-04-14 17:17:26,746-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-101-"The End Of The F***Ing World"was successfully scraped from ratingraph.
+2022-04-14 17:17:26,778-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-101-"The End Of The F***Ing World" scraped from API.
+2022-04-14 17:17:27,347-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-102-"Sharp Objects"was successfully scraped from ratingraph.
+2022-04-14 17:17:27,374-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-102-"Sharp Objects" scraped from API.
+2022-04-14 17:17:28,988-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-103-"The X-Files"was successfully scraped from ratingraph.
+2022-04-14 17:17:29,013-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-103-"The X-Files" scraped from API.
+2022-04-14 17:17:30,123-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-104-"Planet Earth"was successfully scraped from ratingraph.
+2022-04-14 17:17:30,149-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-104-"Planet Earth" scraped from API.
+2022-04-14 17:17:31,288-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-105-"The Family Man"was successfully scraped from ratingraph.
+2022-04-14 17:17:31,315-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-105-"The Family Man" scraped from API.
+2022-04-14 17:17:32,449-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-106-"Barry"was successfully scraped from ratingraph.
+2022-04-14 17:17:32,478-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-106-"Barry" scraped from API.
+2022-04-14 17:17:33,612-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-107-"The Expanse"was successfully scraped from ratingraph.
+2022-04-14 17:17:33,638-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-107-"The Expanse" scraped from API.
+2022-04-14 17:17:34,988-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-108-"The Flash"was successfully scraped from ratingraph.
+2022-04-14 17:17:35,018-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-108-"The Flash" scraped from API.
+2022-04-14 17:17:35,596-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-109-"11.22.63"was successfully scraped from ratingraph.
+2022-04-14 17:17:35,625-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-109-"11.22.63" scraped from API.
+2022-04-14 17:17:36,793-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-110-"Jessica Jones"was successfully scraped from ratingraph.
+2022-04-14 17:17:36,819-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-110-"Jessica Jones" scraped from API.
+2022-04-14 17:17:38,083-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-111-"Outlander"was successfully scraped from ratingraph.
+2022-04-14 17:17:38,115-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-111-"Outlander" scraped from API.
+2022-04-14 17:17:38,690-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-112-"Midnight Mass"was successfully scraped from ratingraph.
+2022-04-14 17:17:38,729-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-112-"Midnight Mass" scraped from API.
+2022-04-14 17:17:40,055-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-113-"Buffy The Vampire Slayer"was successfully scraped from ratingraph.
+2022-04-14 17:17:40,084-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-113-"Buffy The Vampire Slayer" scraped from API.
+2022-04-14 17:17:41,425-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-114-"Seinfeld"was successfully scraped from ratingraph.
+2022-04-14 17:17:41,452-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-114-"Seinfeld" scraped from API.
+2022-04-14 17:17:42,050-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-115-"Altered Carbon"was successfully scraped from ratingraph.
+2022-04-14 17:17:42,081-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-115-"Altered Carbon" scraped from API.
+2022-04-14 17:17:42,689-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-116-"You"was successfully scraped from ratingraph.
+2022-04-14 17:17:42,711-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-116-"You" scraped from API.
+2022-04-14 17:17:43,893-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-117-"The Last Kingdom"was successfully scraped from ratingraph.
+2022-04-14 17:17:43,921-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-117-"The Last Kingdom" scraped from API.
+2022-04-14 17:17:44,510-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-118-"One Punch Man"was successfully scraped from ratingraph.
+2022-04-14 17:17:44,539-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-118-"One Punch Man" scraped from API.
+2022-04-14 17:17:45,642-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-119-"Small Axe"was successfully scraped from ratingraph.
+2022-04-14 17:17:45,670-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-119-"Small Axe" scraped from API.
+2022-04-14 17:17:46,238-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-120-"Good Omens"was successfully scraped from ratingraph.
+2022-04-14 17:17:46,264-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-120-"Good Omens" scraped from API.
+2022-04-14 17:17:47,504-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-121-"Agents Of S.H.I.E.L.D."was successfully scraped from ratingraph.
+2022-04-14 17:17:47,526-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-121-"Agents Of S.H.I.E.L.D." scraped from API.
+2022-04-14 17:17:47,535-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-122-"Jujutsu Kaisen"was successfully scraped from ratingraph.
+2022-04-14 17:17:47,559-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-122-"Jujutsu Kaisen" scraped from API.
+2022-04-14 17:17:48,782-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-123-"The Orville"was successfully scraped from ratingraph.
+2022-04-14 17:17:48,808-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-123-"The Orville" scraped from API.
+2022-04-14 17:17:50,113-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-124-"House"was successfully scraped from ratingraph.
+2022-04-14 17:17:50,142-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-124-"House" scraped from API.
+2022-04-14 17:17:51,266-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-125-"Dracula"was successfully scraped from ratingraph.
+2022-04-14 17:17:51,296-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-125-"Dracula" scraped from API.
+2022-04-14 17:17:54,769-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-126-"Star Trek: Picard"was successfully scraped from ratingraph.
+2022-04-14 17:17:54,797-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-126-"Star Trek: Picard" scraped from API.
+2022-04-14 17:17:55,896-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-127-"Tajkun"was successfully scraped from ratingraph.
+2022-04-14 17:17:55,925-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-127-"Tajkun" scraped from API.
+2022-04-14 17:17:57,256-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-128-"Gotham"was successfully scraped from ratingraph.
+2022-04-14 17:17:57,281-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-128-"Gotham" scraped from API.
+2022-04-14 17:17:58,472-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-129-"The Big Bang Theory"was successfully scraped from ratingraph.
+2022-04-14 17:17:58,495-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-129-"The Big Bang Theory" scraped from API.
+2022-04-14 17:17:58,508-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-130-"Star Wars: The Bad Batch"was successfully scraped from ratingraph.
+2022-04-14 17:17:58,530-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-130-"Star Wars: The Bad Batch" scraped from API.
+2022-04-14 17:17:59,644-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-131-"Taboo"was successfully scraped from ratingraph.
+2022-04-14 17:17:59,698-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-131-"Taboo" scraped from API.
+2022-04-14 17:18:01,073-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-132-"Homeland"was successfully scraped from ratingraph.
+2022-04-14 17:18:01,107-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-132-"Homeland" scraped from API.
+2022-04-14 17:18:02,386-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-133-"13 Reasons Why"was successfully scraped from ratingraph.
+2022-04-14 17:18:02,411-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-133-"13 Reasons Why" scraped from API.
+2022-04-14 17:18:03,494-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-134-"Star Wars: Visions"was successfully scraped from ratingraph.
+2022-04-14 17:18:03,527-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-134-"Star Wars: Visions" scraped from API.
+2022-04-14 17:18:04,643-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-135-"The Oa"was successfully scraped from ratingraph.
+2022-04-14 17:18:04,671-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-135-"The Oa" scraped from API.
+2022-04-14 17:18:05,828-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-136-"Legion"was successfully scraped from ratingraph.
+2022-04-14 17:18:05,855-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-136-"Legion" scraped from API.
+2022-04-14 17:18:07,782-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-137-"Star Trek"was successfully scraped from ratingraph.
+2022-04-14 17:18:07,813-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-137-"Star Trek" scraped from API.
+2022-04-14 17:18:08,375-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-138-"Reacher"was successfully scraped from ratingraph.
+2022-04-14 17:18:08,403-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-138-"Reacher" scraped from API.
+2022-04-14 17:18:09,606-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-139-"Star Wars: The Clone Wars"was successfully scraped from ratingraph.
+2022-04-14 17:18:09,635-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-139-"Star Wars: The Clone Wars" scraped from API.
+2022-04-14 17:18:10,825-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-140-"Only Murders In The Building"was successfully scraped from ratingraph.
+2022-04-14 17:18:10,853-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-140-"Only Murders In The Building" scraped from API.
+2022-04-14 17:18:11,989-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-141-"His Dark Materials"was successfully scraped from ratingraph.
+2022-04-14 17:18:12,019-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-141-"His Dark Materials" scraped from API.
+2022-04-14 17:18:13,177-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-142-"Tom Clancy'S Jack Ryan"was successfully scraped from ratingraph.
+2022-04-14 17:18:13,204-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-142-"Tom Clancy'S Jack Ryan" scraped from API.
+2022-04-14 17:18:14,574-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-143-"It'S Always Sunny In Philadelphia"was successfully scraped from ratingraph.
+2022-04-14 17:18:14,600-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-143-"It'S Always Sunny In Philadelphia" scraped from API.
+2022-04-14 17:18:15,959-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-144-"Brooklyn Nine-Nine"was successfully scraped from ratingraph.
+2022-04-14 17:18:15,988-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-144-"Brooklyn Nine-Nine" scraped from API.
+2022-04-14 17:18:17,136-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-145-"Sons Of Anarchy"was successfully scraped from ratingraph.
+2022-04-14 17:18:17,162-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-145-"Sons Of Anarchy" scraped from API.
+2022-04-14 17:18:18,245-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-146-"Atlanta"was successfully scraped from ratingraph.
+2022-04-14 17:18:18,271-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-146-"Atlanta" scraped from API.
+2022-04-14 17:18:19,512-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-147-"Gravity Falls"was successfully scraped from ratingraph.
+2022-04-14 17:18:19,544-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-147-"Gravity Falls" scraped from API.
+2022-04-14 17:18:20,653-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-148-"Penny Dreadful"was successfully scraped from ratingraph.
+2022-04-14 17:18:20,680-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-148-"Penny Dreadful" scraped from API.
+2022-04-14 17:18:20,695-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-149-"Luther"was successfully scraped from ratingraph.
+2022-04-14 17:18:20,726-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-149-"Luther" scraped from API.
+2022-04-14 17:18:22,007-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-150-"Mad Men"was successfully scraped from ratingraph.
+2022-04-14 17:18:22,034-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-150-"Mad Men" scraped from API.
+2022-04-14 17:18:23,160-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-151-"Shadow And Bone"was successfully scraped from ratingraph.
+2022-04-14 17:18:23,189-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-151-"Shadow And Bone" scraped from API.
+2022-04-14 17:18:23,779-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-152-"The Undoing"was successfully scraped from ratingraph.
+2022-04-14 17:18:23,804-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-152-"The Undoing" scraped from API.
+2022-04-14 17:18:24,904-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-153-"The Good Place"was successfully scraped from ratingraph.
+2022-04-14 17:18:24,949-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-153-"The Good Place" scraped from API.
+2022-04-14 17:18:26,604-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-154-"Regular Show"was successfully scraped from ratingraph.
+2022-04-14 17:18:26,639-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-154-"Regular Show" scraped from API.
+2022-04-14 17:18:29,299-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-155-"Young Justice"was successfully scraped from ratingraph.
+2022-04-14 17:18:29,329-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-155-"Young Justice" scraped from API.
+2022-04-14 17:18:30,466-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-156-"Unbelievable"was successfully scraped from ratingraph.
+2022-04-14 17:18:30,490-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-156-"Unbelievable" scraped from API.
+2022-04-14 17:18:32,537-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-157-"Star Trek: The Next Generation"was successfully scraped from ratingraph.
+2022-04-14 17:18:32,579-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-157-"Star Trek: The Next Generation" scraped from API.
+2022-04-14 17:18:33,119-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-158-"Scam 1992: The Harshad Mehta Story"was successfully scraped from ratingraph.
+2022-04-14 17:18:33,145-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-158-"Scam 1992: The Harshad Mehta Story" scraped from API.
+2022-04-14 17:18:33,713-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-159-"The Night Manager"was successfully scraped from ratingraph.
+2022-04-14 17:18:33,739-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-159-"The Night Manager" scraped from API.
+2022-04-14 17:18:35,011-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-160-"Shadowhunters"was successfully scraped from ratingraph.
+2022-04-14 17:18:35,035-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-160-"Shadowhunters" scraped from API.
+2022-04-14 17:18:35,606-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-161-"Cowboy Bebop"was successfully scraped from ratingraph.
+2022-04-14 17:18:35,633-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-161-"Cowboy Bebop" scraped from API.
+2022-04-14 17:18:36,919-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-162-"Star Trek: Discovery"was successfully scraped from ratingraph.
+2022-04-14 17:18:36,943-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-162-"Star Trek: Discovery" scraped from API.
+2022-04-14 17:18:38,152-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-163-"South Park"was successfully scraped from ratingraph.
+2022-04-14 17:18:38,181-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-163-"South Park" scraped from API.
+2022-04-14 17:18:38,756-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-164-"Halo"was successfully scraped from ratingraph.
+2022-04-14 17:18:38,785-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-164-"Halo" scraped from API.
+2022-04-14 17:18:40,007-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-165-"Fear The Walking Dead"was successfully scraped from ratingraph.
+2022-04-14 17:18:40,039-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-165-"Fear The Walking Dead" scraped from API.
+2022-04-14 17:18:41,203-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-166-"Killing Eve"was successfully scraped from ratingraph.
+2022-04-14 17:18:41,231-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-166-"Killing Eve" scraped from API.
+2022-04-14 17:18:41,819-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-167-"Luke Cage"was successfully scraped from ratingraph.
+2022-04-14 17:18:41,851-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-167-"Luke Cage" scraped from API.
+2022-04-14 17:18:42,936-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-168-"The Adventures Of Sherlock Holmes And Dr. Watson"was successfully scraped from ratingraph.
+2022-04-14 17:18:42,965-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-168-"The Adventures Of Sherlock Holmes And Dr. Watson" scraped from API.
+2022-04-14 17:18:44,093-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-169-"Fawlty Towers"was successfully scraped from ratingraph.
+2022-04-14 17:18:44,126-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-169-"Fawlty Towers" scraped from API.
+2022-04-14 17:18:45,246-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-170-"Titans"was successfully scraped from ratingraph.
+2022-04-14 17:18:45,274-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-170-"Titans" scraped from API.
+2022-04-14 17:18:45,892-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-171-"Agent Carter"was successfully scraped from ratingraph.
+2022-04-14 17:18:45,920-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-171-"Agent Carter" scraped from API.
+2022-04-14 17:18:46,487-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-172-"After Life"was successfully scraped from ratingraph.
+2022-04-14 17:18:46,509-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-172-"After Life" scraped from API.
+2022-04-14 17:18:47,637-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-173-"See"was successfully scraped from ratingraph.
+2022-04-14 17:18:47,668-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-173-"See" scraped from API.
+2022-04-14 17:18:48,804-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-174-"V.C. Andrews' Dollanganger Saga"was successfully scraped from ratingraph.
+2022-04-14 17:18:48,836-ERROR-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:171-174-'V.C. Andrews' Dollanganger Saga' wasn't scrape from API.
+2022-04-14 17:18:49,400-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-175-"The Legend Of Korra"was successfully scraped from ratingraph.
+2022-04-14 17:18:49,425-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-175-"The Legend Of Korra" scraped from API.
+2022-04-14 17:18:50,009-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-176-"Lovecraft Country"was successfully scraped from ratingraph.
+2022-04-14 17:18:50,041-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-176-"Lovecraft Country" scraped from API.
+2022-04-14 17:18:50,055-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-177-"1883"was successfully scraped from ratingraph.
+2022-04-14 17:18:50,084-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-177-"1883" scraped from API.
+2022-04-14 17:18:51,271-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-178-"Iron Fist"was successfully scraped from ratingraph.
+2022-04-14 17:18:51,297-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-178-"Iron Fist" scraped from API.
+2022-04-14 17:18:51,893-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-179-"Raised By Wolves"was successfully scraped from ratingraph.
+2022-04-14 17:18:51,917-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-179-"Raised By Wolves" scraped from API.
+2022-04-14 17:18:53,026-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-180-"The Morning Show"was successfully scraped from ratingraph.
+2022-04-14 17:18:53,052-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-180-"The Morning Show" scraped from API.
+2022-04-14 17:18:54,261-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-181-"American Crime Story"was successfully scraped from ratingraph.
+2022-04-14 17:18:54,292-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-181-"American Crime Story" scraped from API.
+2022-04-14 17:18:55,484-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-182-"Ash Vs Evil Dead"was successfully scraped from ratingraph.
+2022-04-14 17:18:55,513-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-182-"Ash Vs Evil Dead" scraped from API.
+2022-04-14 17:18:56,663-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-183-"Foundation"was successfully scraped from ratingraph.
+2022-04-14 17:18:56,690-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-183-"Foundation" scraped from API.
+2022-04-14 17:18:57,814-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-184-"The It Crowd"was successfully scraped from ratingraph.
+2022-04-14 17:18:57,853-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-184-"The It Crowd" scraped from API.
+2022-04-14 17:18:58,985-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-185-"Electric Dreams"was successfully scraped from ratingraph.
+2022-04-14 17:18:59,010-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-185-"Electric Dreams" scraped from API.
+2022-04-14 17:18:59,641-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-186-"Suits"was successfully scraped from ratingraph.
+2022-04-14 17:18:59,680-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-186-"Suits" scraped from API.
+2022-04-14 17:19:00,856-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-187-"Anne With An E"was successfully scraped from ratingraph.
+2022-04-14 17:19:00,904-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-187-"Anne With An E" scraped from API.
+2022-04-14 17:19:00,918-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-188-"Broken But Beautiful"was successfully scraped from ratingraph.
+2022-04-14 17:19:00,946-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-188-"Broken But Beautiful" scraped from API.
+2022-04-14 17:19:02,064-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-189-"Banshee"was successfully scraped from ratingraph.
+2022-04-14 17:19:02,102-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-189-"Banshee" scraped from API.
+2022-04-14 17:19:03,385-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-190-"Parks And Recreation"was successfully scraped from ratingraph.
+2022-04-14 17:19:03,412-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-190-"Parks And Recreation" scraped from API.
+2022-04-14 17:19:03,977-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-191-"Maniac"was successfully scraped from ratingraph.
+2022-04-14 17:19:04,014-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-191-"Maniac" scraped from API.
+2022-04-14 17:19:04,591-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-192-"The Frog"was successfully scraped from ratingraph.
+2022-04-14 17:19:04,622-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-192-"The Frog" scraped from API.
+2022-04-14 17:19:05,774-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-193-"Rome"was successfully scraped from ratingraph.
+2022-04-14 17:19:05,800-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-193-"Rome" scraped from API.
+2022-04-14 17:19:07,006-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-194-"Fringe"was successfully scraped from ratingraph.
+2022-04-14 17:19:07,031-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-194-"Fringe" scraped from API.
+2022-04-14 17:19:09,768-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-195-"The Twilight Zone"was successfully scraped from ratingraph.
+2022-04-14 17:19:09,807-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-195-"The Twilight Zone" scraped from API.
+2022-04-14 17:19:09,815-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-196-"Vinland Saga"was successfully scraped from ratingraph.
+2022-04-14 17:19:09,847-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-196-"Vinland Saga" scraped from API.
+2022-04-14 17:19:10,978-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-197-"Boardwalk Empire"was successfully scraped from ratingraph.
+2022-04-14 17:19:11,003-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-197-"Boardwalk Empire" scraped from API.
+2022-04-14 17:19:11,550-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-198-"Defending Jacob"was successfully scraped from ratingraph.
+2022-04-14 17:19:11,576-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-198-"Defending Jacob" scraped from API.
+2022-04-14 17:19:12,975-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-199-"Oz"was successfully scraped from ratingraph.
+2022-04-14 17:19:13,004-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-199-"Oz" scraped from API.
+2022-04-14 17:19:14,171-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-200-"Lupin"was successfully scraped from ratingraph.
+2022-04-14 17:19:14,216-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-200-"Lupin" scraped from API.
+2022-04-14 17:19:15,523-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-201-"The Shield"was successfully scraped from ratingraph.
+2022-04-14 17:19:15,551-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-201-"The Shield" scraped from API.
+2022-04-14 17:19:17,126-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-202-"Masters Of Horror"was successfully scraped from ratingraph.
+2022-04-14 17:19:17,148-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-202-"Masters Of Horror" scraped from API.
+2022-04-14 17:19:18,374-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-203-"Freaks And Geeks"was successfully scraped from ratingraph.
+2022-04-14 17:19:18,405-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-203-"Freaks And Geeks" scraped from API.
+2022-04-14 17:19:19,036-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-204-"Black Sails"was successfully scraped from ratingraph.
+2022-04-14 17:19:19,058-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-204-"Black Sails" scraped from API.
+2022-04-14 17:19:19,068-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-205-"Godless"was successfully scraped from ratingraph.
+2022-04-14 17:19:19,098-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-205-"Godless" scraped from API.
+2022-04-14 17:19:20,237-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-206-"Sharpe"was successfully scraped from ratingraph.
+2022-04-14 17:19:20,268-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-206-"Sharpe" scraped from API.
+2022-04-14 17:19:21,400-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-207-"Russian Doll"was successfully scraped from ratingraph.
+2022-04-14 17:19:21,426-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-207-"Russian Doll" scraped from API.
+2022-04-14 17:19:22,495-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-208-"The Grand Tour"was successfully scraped from ratingraph.
+2022-04-14 17:19:22,530-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-208-"The Grand Tour" scraped from API.
+2022-04-14 17:19:23,656-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-209-"Sacred Games"was successfully scraped from ratingraph.
+2022-04-14 17:19:23,683-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-209-"Sacred Games" scraped from API.
+2022-04-14 17:19:24,774-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-210-"Patito Feo"was successfully scraped from ratingraph.
+2022-04-14 17:19:24,798-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-210-"Patito Feo" scraped from API.
+2022-04-14 17:19:26,041-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-211-"Orange Is The New Black"was successfully scraped from ratingraph.
+2022-04-14 17:19:26,072-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-211-"Orange Is The New Black" scraped from API.
+2022-04-14 17:19:27,627-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-212-"This Is Us"was successfully scraped from ratingraph.
+2022-04-14 17:19:27,663-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-212-"This Is Us" scraped from API.
+2022-04-14 17:19:28,233-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-213-"Young Royals"was successfully scraped from ratingraph.
+2022-04-14 17:19:28,258-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-213-"Young Royals" scraped from API.
+2022-04-14 17:19:29,446-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-214-"Bates Motel"was successfully scraped from ratingraph.
+2022-04-14 17:19:29,477-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-214-"Bates Motel" scraped from API.
+2022-04-14 17:19:30,730-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-215-"Arrested Development"was successfully scraped from ratingraph.
+2022-04-14 17:19:30,756-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-215-"Arrested Development" scraped from API.
+2022-04-14 17:19:30,769-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-216-"Carnival Row"was successfully scraped from ratingraph.
+2022-04-14 17:19:30,820-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-216-"Carnival Row" scraped from API.
+2022-04-14 17:19:30,832-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-217-"Our Planet"was successfully scraped from ratingraph.
+2022-04-14 17:19:30,861-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-217-"Our Planet" scraped from API.
+2022-04-14 17:19:32,101-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-218-"Modern Love"was successfully scraped from ratingraph.
+2022-04-14 17:19:32,130-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-218-"Modern Love" scraped from API.
+2022-04-14 17:19:33,289-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-219-"The Pacific"was successfully scraped from ratingraph.
+2022-04-14 17:19:33,320-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-219-"The Pacific" scraped from API.
+2022-04-14 17:19:33,341-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-220-"The Office"was successfully scraped from ratingraph.
+2022-04-14 17:19:33,370-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-220-"The Office" scraped from API.
+2022-04-14 17:19:33,960-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-221-"The Beatles: Get Back"was successfully scraped from ratingraph.
+2022-04-14 17:19:33,988-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-221-"The Beatles: Get Back" scraped from API.
+2022-04-14 17:19:35,112-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-222-"The Marvelous Mrs. Maisel"was successfully scraped from ratingraph.
+2022-04-14 17:19:35,139-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-222-"The Marvelous Mrs. Maisel" scraped from API.
+2022-04-14 17:19:36,555-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-223-"Futurama"was successfully scraped from ratingraph.
+2022-04-14 17:19:36,593-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-223-"Futurama" scraped from API.
+2022-04-14 17:19:37,788-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-224-"The Newsroom"was successfully scraped from ratingraph.
+2022-04-14 17:19:37,813-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-224-"The Newsroom" scraped from API.
+2022-04-14 17:19:38,990-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-225-"Angel"was successfully scraped from ratingraph.
+2022-04-14 17:19:39,015-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-225-"Angel" scraped from API.
+2022-04-14 17:19:40,255-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-226-"Battlestar Galactica"was successfully scraped from ratingraph.
+2022-04-14 17:19:40,286-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-226-"Battlestar Galactica" scraped from API.
+2022-04-14 17:19:41,406-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-227-"Adventure Time: Distant Lands"was successfully scraped from ratingraph.
+2022-04-14 17:19:41,438-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-227-"Adventure Time: Distant Lands" scraped from API.
+2022-04-14 17:19:42,595-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-228-"What We Do In The Shadows"was successfully scraped from ratingraph.
+2022-04-14 17:19:42,622-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-228-"What We Do In The Shadows" scraped from API.
+2022-04-14 17:19:43,207-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-229-"Your Honor"was successfully scraped from ratingraph.
+2022-04-14 17:19:43,231-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-229-"Your Honor" scraped from API.
+2022-04-14 17:19:44,510-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-230-"Master Of None"was successfully scraped from ratingraph.
+2022-04-14 17:19:44,540-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-230-"Master Of None" scraped from API.
+2022-04-14 17:19:45,137-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-231-"Broadchurch"was successfully scraped from ratingraph.
+2022-04-14 17:19:45,189-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-231-"Broadchurch" scraped from API.
+2022-04-14 17:19:46,358-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-232-"Mr. Bean"was successfully scraped from ratingraph.
+2022-04-14 17:19:46,383-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-232-"Mr. Bean" scraped from API.
+2022-04-14 17:19:47,564-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-233-"Over The Garden Wall"was successfully scraped from ratingraph.
+2022-04-14 17:19:47,591-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-233-"Over The Garden Wall" scraped from API.
+2022-04-14 17:19:48,699-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-234-"Downton Abbey"was successfully scraped from ratingraph.
+2022-04-14 17:19:48,728-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-234-"Downton Abbey" scraped from API.
+2022-04-14 17:19:49,297-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-235-"Kingdom"was successfully scraped from ratingraph.
+2022-04-14 17:19:49,324-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-235-"Kingdom" scraped from API.
+2022-04-14 17:19:50,614-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-236-"Six Feet Under"was successfully scraped from ratingraph.
+2022-04-14 17:19:50,657-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-236-"Six Feet Under" scraped from API.
+2022-04-14 17:19:50,667-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-237-"Gilmore Girls: A Year In The Life"was successfully scraped from ratingraph.
+2022-04-14 17:19:50,700-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-237-"Gilmore Girls: A Year In The Life" scraped from API.
+2022-04-14 17:19:51,249-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-238-"Mirzapur"was successfully scraped from ratingraph.
+2022-04-14 17:19:51,290-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-238-"Mirzapur" scraped from API.
+2022-04-14 17:19:53,378-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-239-"Columbo"was successfully scraped from ratingraph.
+2022-04-14 17:19:53,416-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-239-"Columbo" scraped from API.
+2022-04-14 17:19:53,982-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-240-"Castle Rock"was successfully scraped from ratingraph.
+2022-04-14 17:19:54,013-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-240-"Castle Rock" scraped from API.
+2022-04-14 17:19:54,644-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-241-"Close Enough"was successfully scraped from ratingraph.
+2022-04-14 17:19:54,670-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-241-"Close Enough" scraped from API.
+2022-04-14 17:19:55,260-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-242-"The Man In The High Castle"was successfully scraped from ratingraph.
+2022-04-14 17:19:55,286-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-242-"The Man In The High Castle" scraped from API.
+2022-04-14 17:19:55,866-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-243-"And Then There Were None"was successfully scraped from ratingraph.
+2022-04-14 17:19:55,895-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-243-"And Then There Were None" scraped from API.
+2022-04-14 17:19:57,082-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-244-"Wynonna Earp"was successfully scraped from ratingraph.
+2022-04-14 17:19:57,105-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-244-"Wynonna Earp" scraped from API.
+2022-04-14 17:19:58,264-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-245-"How To Get Away With Murder"was successfully scraped from ratingraph.
+2022-04-14 17:19:58,292-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-245-"How To Get Away With Murder" scraped from API.
+2022-04-14 17:19:58,845-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-246-"Castlevania"was successfully scraped from ratingraph.
+2022-04-14 17:19:58,873-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-246-"Castlevania" scraped from API.
+2022-04-14 17:19:59,434-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-247-"Yellowstone"was successfully scraped from ratingraph.
+2022-04-14 17:19:59,470-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-247-"Yellowstone" scraped from API.
+2022-04-14 17:20:00,681-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-248-"Silicon Valley"was successfully scraped from ratingraph.
+2022-04-14 17:20:00,710-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-248-"Silicon Valley" scraped from API.
+2022-04-14 17:20:01,277-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-249-"Doom Patrol"was successfully scraped from ratingraph.
+2022-04-14 17:20:01,307-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-249-"Doom Patrol" scraped from API.
+2022-04-14 17:20:02,550-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-250-"Deadwood"was successfully scraped from ratingraph.
+2022-04-14 17:20:02,576-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-250-"Deadwood" scraped from API.
+2022-04-14 17:20:02,689-INFO-FILE:ratingraph_scraper.py-FUNC:scrape_ratingraph_parts-LINE:272-Data mining project checkpoint #1 took 0:04:39.567143
+2022-04-14 17:20:02,732-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Chernobyl inserted successfully to all the relevant tables.
+2022-04-14 17:20:02,789-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Game Of Thrones inserted successfully to all the relevant tables.
+2022-04-14 17:20:02,837-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Black Mirror inserted successfully to all the relevant tables.
+2022-04-14 17:20:02,864-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Sherlock inserted successfully to all the relevant tables.
+2022-04-14 17:20:02,903-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Breaking Bad inserted successfully to all the relevant tables.
+2022-04-14 17:20:02,943-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Mandalorian inserted successfully to all the relevant tables.
+2022-04-14 17:20:02,959-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Attack On Titan inserted successfully to all the relevant tables.
+2022-04-14 17:20:02,975-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Loki inserted successfully to all the relevant tables.
+2022-04-14 17:20:02,993-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Wandavision inserted successfully to all the relevant tables.
+2022-04-14 17:20:02,998-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Dhindora inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,013-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Stranger Things inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,039-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Book Of Boba Fett inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,052-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Dark inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,061-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Arcane inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,080-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Witcher inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,121-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Westworld inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,140-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Moon Knight inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,158-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Falcon And The Winter Soldier inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,184-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about True Detective inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,220-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Rick And Morty inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,226-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Squid Game inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,241-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about What If...? inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,245-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Heroes inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,259-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Queen'S Gambit inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,285-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Boys inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,316-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Better Call Saul inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,338-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Mr. Robot inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,390-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Daredevil inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,429-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Love, Death & Robots inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,450-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Hawkeye inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,541-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Walking Dead inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,558-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Haunting Of Hill House inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,573-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Dexter: New Blood inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,623-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Band Of Brothers inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,632-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Aspirants inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,654-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Watchmen inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,670-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Paranormal inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,686-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Invincible inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,712-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Peaky Blinders inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,727-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Wheel Of Time inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,742-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about When They See Us inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,807-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Hannibal inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,841-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Euphoria inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,880-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Fargo inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,901-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Money Heist inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,932-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Peacemaker inserted successfully to all the relevant tables.
+2022-04-14 17:20:03,972-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Punisher inserted successfully to all the relevant tables.
+2022-04-14 17:20:04,044-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Sopranos inserted successfully to all the relevant tables.
+2022-04-14 17:20:04,123-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Lost inserted successfully to all the relevant tables.
+2022-04-14 17:20:04,156-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Leftovers inserted successfully to all the relevant tables.
+2022-04-14 17:20:04,196-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Mindhunter inserted successfully to all the relevant tables.
+2022-04-14 17:20:04,204-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Mare Of Easttown inserted successfully to all the relevant tables.
+2022-04-14 17:20:04,281-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Dexter inserted successfully to all the relevant tables.
+2022-04-14 17:20:04,307-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Narcos inserted successfully to all the relevant tables.
+2022-04-14 17:20:04,470-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Doctor Who inserted successfully to all the relevant tables.
+2022-04-14 17:20:04,477-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Not Me inserted successfully to all the relevant tables.
+2022-04-14 17:20:04,513-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Firefly inserted successfully to all the relevant tables.
+2022-04-14 17:20:04,565-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Lucifer inserted successfully to all the relevant tables.
+2022-04-14 17:20:04,679-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Friends inserted successfully to all the relevant tables.
+2022-04-14 17:20:04,699-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Twin Peaks inserted successfully to all the relevant tables.
+2022-04-14 17:20:04,733-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Ted Lasso inserted successfully to all the relevant tables.
+2022-04-14 17:20:04,758-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Big Little Lies inserted successfully to all the relevant tables.
+2022-04-14 17:20:04,775-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Maigret inserted successfully to all the relevant tables.
+2022-04-14 17:20:04,811-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Ozark inserted successfully to all the relevant tables.
+2022-04-14 17:20:05,076-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Office inserted successfully to all the relevant tables.
+2022-04-14 17:20:05,099-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Night Of inserted successfully to all the relevant tables.
+2022-04-14 17:20:05,133-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Sense8 inserted successfully to all the relevant tables.
+2022-04-14 17:20:05,152-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Sex Education inserted successfully to all the relevant tables.
+2022-04-14 17:20:05,218-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Twin Peaks inserted successfully to all the relevant tables.
+2022-04-14 17:20:05,262-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Vikings inserted successfully to all the relevant tables.
+2022-04-14 17:20:05,300-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Crown inserted successfully to all the relevant tables.
+2022-04-14 17:20:05,369-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Avatar: The Last Airbender inserted successfully to all the relevant tables.
+2022-04-14 17:20:05,411-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Succession inserted successfully to all the relevant tables.
+2022-04-14 17:20:05,572-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Supernatural inserted successfully to all the relevant tables.
+2022-04-14 17:20:05,588-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Dekalog inserted successfully to all the relevant tables.
+2022-04-14 17:20:05,616-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Bojack Horseman inserted successfully to all the relevant tables.
+2022-04-14 17:20:05,641-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Umbrella Academy inserted successfully to all the relevant tables.
+2022-04-14 17:20:05,707-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about House Of Cards inserted successfully to all the relevant tables.
+2022-04-14 17:20:05,729-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Spartacus: Gods Of The Arena inserted successfully to all the relevant tables.
+2022-04-14 17:20:05,780-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Defenders inserted successfully to all the relevant tables.
+2022-04-14 17:20:05,860-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Wire inserted successfully to all the relevant tables.
+2022-04-14 17:20:05,875-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Fleabag inserted successfully to all the relevant tables.
+2022-04-14 17:20:05,891-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Demon Slayer: Kimetsu No Yaiba inserted successfully to all the relevant tables.
+2022-04-14 17:20:05,908-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Bodyguard inserted successfully to all the relevant tables.
+2022-04-14 17:20:05,920-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Last Dance inserted successfully to all the relevant tables.
+2022-04-14 17:20:06,000-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Person Of Interest inserted successfully to all the relevant tables.
+2022-04-14 17:20:06,024-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Dracula inserted successfully to all the relevant tables.
+2022-04-14 17:20:06,173-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Community inserted successfully to all the relevant tables.
+2022-04-14 17:20:06,221-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Haunting Of Bly Manor inserted successfully to all the relevant tables.
+2022-04-14 17:20:06,413-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Arrow inserted successfully to all the relevant tables.
+2022-04-14 17:20:06,464-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Handmaid'S Tale inserted successfully to all the relevant tables.
+2022-04-14 17:20:06,524-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The 100 inserted successfully to all the relevant tables.
+2022-04-14 17:20:06,530-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Planet Earth Ii inserted successfully to all the relevant tables.
+2022-04-14 17:20:06,602-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Prison Break inserted successfully to all the relevant tables.
+2022-04-14 17:20:06,671-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Cobra Kai inserted successfully to all the relevant tables.
+2022-04-14 17:20:06,712-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Spartacus inserted successfully to all the relevant tables.
+2022-04-14 17:20:06,754-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about How I Met Your Mother inserted successfully to all the relevant tables.
+2022-04-14 17:20:06,866-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about American Horror Story inserted successfully to all the relevant tables.
+2022-04-14 17:20:06,896-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Death Note inserted successfully to all the relevant tables.
+2022-04-14 17:20:06,944-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Outsider inserted successfully to all the relevant tables.
+2022-04-14 17:20:06,965-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The End Of The F***Ing World inserted successfully to all the relevant tables.
+2022-04-14 17:20:06,997-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Sharp Objects inserted successfully to all the relevant tables.
+2022-04-14 17:20:07,277-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The X-Files inserted successfully to all the relevant tables.
+2022-04-14 17:20:07,307-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Planet Earth inserted successfully to all the relevant tables.
+2022-04-14 17:20:07,344-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Family Man inserted successfully to all the relevant tables.
+2022-04-14 17:20:07,376-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Barry inserted successfully to all the relevant tables.
+2022-04-14 17:20:07,418-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Expanse inserted successfully to all the relevant tables.
+2022-04-14 17:20:07,543-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Flash inserted successfully to all the relevant tables.
+2022-04-14 17:20:07,578-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about 11.22.63 inserted successfully to all the relevant tables.
+2022-04-14 17:20:07,678-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Jessica Jones inserted successfully to all the relevant tables.
+2022-04-14 17:20:07,749-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Outlander inserted successfully to all the relevant tables.
+2022-04-14 17:20:07,772-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Midnight Mass inserted successfully to all the relevant tables.
+2022-04-14 17:20:07,885-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Buffy The Vampire Slayer inserted successfully to all the relevant tables.
+2022-04-14 17:20:08,017-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Seinfeld inserted successfully to all the relevant tables.
+2022-04-14 17:20:08,056-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Altered Carbon inserted successfully to all the relevant tables.
+2022-04-14 17:20:08,096-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about You inserted successfully to all the relevant tables.
+2022-04-14 17:20:08,138-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Last Kingdom inserted successfully to all the relevant tables.
+2022-04-14 17:20:08,155-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about One Punch Man inserted successfully to all the relevant tables.
+2022-04-14 17:20:08,175-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Small Axe inserted successfully to all the relevant tables.
+2022-04-14 17:20:08,192-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Good Omens inserted successfully to all the relevant tables.
+2022-04-14 17:20:08,315-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Agents Of S.H.I.E.L.D. inserted successfully to all the relevant tables.
+2022-04-14 17:20:08,322-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Jujutsu Kaisen inserted successfully to all the relevant tables.
+2022-04-14 17:20:08,393-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Orville inserted successfully to all the relevant tables.
+2022-04-14 17:20:08,589-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about House inserted successfully to all the relevant tables.
+2022-04-14 17:20:08,619-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Dracula inserted successfully to all the relevant tables.
+2022-04-14 17:20:08,709-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Star Trek: Picard inserted successfully to all the relevant tables.
+2022-04-14 17:20:08,733-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Tajkun inserted successfully to all the relevant tables.
+2022-04-14 17:20:08,868-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Gotham inserted successfully to all the relevant tables.
+2022-04-14 17:20:08,932-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Big Bang Theory inserted successfully to all the relevant tables.
+2022-04-14 17:20:08,956-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Star Wars: The Bad Batch inserted successfully to all the relevant tables.
+2022-04-14 17:20:08,980-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Taboo inserted successfully to all the relevant tables.
+2022-04-14 17:20:09,117-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Homeland inserted successfully to all the relevant tables.
+2022-04-14 17:20:09,224-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about 13 Reasons Why inserted successfully to all the relevant tables.
+2022-04-14 17:20:09,269-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Star Wars: Visions inserted successfully to all the relevant tables.
+2022-04-14 17:20:09,303-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Oa inserted successfully to all the relevant tables.
+2022-04-14 17:20:09,392-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Legion inserted successfully to all the relevant tables.
+2022-04-14 17:20:09,857-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Star Trek inserted successfully to all the relevant tables.
+2022-04-14 17:20:09,894-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Reacher inserted successfully to all the relevant tables.
+2022-04-14 17:20:10,031-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Star Wars: The Clone Wars inserted successfully to all the relevant tables.
+2022-04-14 17:20:10,082-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Only Murders In The Building inserted successfully to all the relevant tables.
+2022-04-14 17:20:10,143-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about His Dark Materials inserted successfully to all the relevant tables.
+2022-04-14 17:20:10,189-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Tom Clancy'S Jack Ryan inserted successfully to all the relevant tables.
+2022-04-14 17:20:10,312-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about It'S Always Sunny In Philadelphia inserted successfully to all the relevant tables.
+2022-04-14 17:20:10,462-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Brooklyn Nine-Nine inserted successfully to all the relevant tables.
+2022-04-14 17:20:10,544-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Sons Of Anarchy inserted successfully to all the relevant tables.
+2022-04-14 17:20:10,567-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Atlanta inserted successfully to all the relevant tables.
+2022-04-14 17:20:10,620-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Gravity Falls inserted successfully to all the relevant tables.
+2022-04-14 17:20:10,644-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Penny Dreadful inserted successfully to all the relevant tables.
+2022-04-14 17:20:10,663-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Luther inserted successfully to all the relevant tables.
+2022-04-14 17:20:10,742-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Mad Men inserted successfully to all the relevant tables.
+2022-04-14 17:20:10,770-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Shadow And Bone inserted successfully to all the relevant tables.
+2022-04-14 17:20:10,786-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Undoing inserted successfully to all the relevant tables.
+2022-04-14 17:20:10,840-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Good Place inserted successfully to all the relevant tables.
+2022-04-14 17:20:10,959-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Regular Show inserted successfully to all the relevant tables.
+2022-04-14 17:20:11,410-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Young Justice inserted successfully to all the relevant tables.
+2022-04-14 17:20:11,442-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Unbelievable inserted successfully to all the relevant tables.
+2022-04-14 17:20:11,830-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Star Trek: The Next Generation inserted successfully to all the relevant tables.
+2022-04-14 17:20:11,842-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Scam 1992: The Harshad Mehta Story inserted successfully to all the relevant tables.
+2022-04-14 17:20:11,863-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Night Manager inserted successfully to all the relevant tables.
+2022-04-14 17:20:11,946-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Shadowhunters inserted successfully to all the relevant tables.
+2022-04-14 17:20:11,962-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Cowboy Bebop inserted successfully to all the relevant tables.
+2022-04-14 17:20:12,086-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Star Trek: Discovery inserted successfully to all the relevant tables.
+2022-04-14 17:20:12,152-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about South Park inserted successfully to all the relevant tables.
+2022-04-14 17:20:12,179-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Halo inserted successfully to all the relevant tables.
+2022-04-14 17:20:12,313-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Fear The Walking Dead inserted successfully to all the relevant tables.
+2022-04-14 17:20:12,355-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Killing Eve inserted successfully to all the relevant tables.
+2022-04-14 17:20:12,452-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Luke Cage inserted successfully to all the relevant tables.
+2022-04-14 17:20:12,487-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Adventures Of Sherlock Holmes And Dr. Watson inserted successfully to all the relevant tables.
+2022-04-14 17:20:12,520-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Fawlty Towers inserted successfully to all the relevant tables.
+2022-04-14 17:20:12,682-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Titans inserted successfully to all the relevant tables.
+2022-04-14 17:20:12,765-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Agent Carter inserted successfully to all the relevant tables.
+2022-04-14 17:20:12,788-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about After Life inserted successfully to all the relevant tables.
+2022-04-14 17:20:12,846-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about See inserted successfully to all the relevant tables.
+2022-04-14 17:20:12,877-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about V.C. Andrews' Dollanganger Saga inserted successfully to all the relevant tables.
+2022-04-14 17:20:12,935-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Legend Of Korra inserted successfully to all the relevant tables.
+2022-04-14 17:20:12,978-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Lovecraft Country inserted successfully to all the relevant tables.
+2022-04-14 17:20:12,988-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about 1883 inserted successfully to all the relevant tables.
+2022-04-14 17:20:13,074-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Iron Fist inserted successfully to all the relevant tables.
+2022-04-14 17:20:13,116-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Raised By Wolves inserted successfully to all the relevant tables.
+2022-04-14 17:20:13,185-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Morning Show inserted successfully to all the relevant tables.
+2022-04-14 17:20:13,262-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about American Crime Story inserted successfully to all the relevant tables.
+2022-04-14 17:20:13,330-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Ash Vs Evil Dead inserted successfully to all the relevant tables.
+2022-04-14 17:20:13,378-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Foundation inserted successfully to all the relevant tables.
+2022-04-14 17:20:13,404-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The It Crowd inserted successfully to all the relevant tables.
+2022-04-14 17:20:13,507-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Electric Dreams inserted successfully to all the relevant tables.
+2022-04-14 17:20:13,614-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Suits inserted successfully to all the relevant tables.
+2022-04-14 17:20:13,682-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Anne With An E inserted successfully to all the relevant tables.
+2022-04-14 17:20:13,692-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Broken But Beautiful inserted successfully to all the relevant tables.
+2022-04-14 17:20:13,783-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Banshee inserted successfully to all the relevant tables.
+2022-04-14 17:20:13,997-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Parks And Recreation inserted successfully to all the relevant tables.
+2022-04-14 17:20:14,040-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Maniac inserted successfully to all the relevant tables.
+2022-04-14 17:20:14,058-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Frog inserted successfully to all the relevant tables.
+2022-04-14 17:20:14,183-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Rome inserted successfully to all the relevant tables.
+2022-04-14 17:20:14,394-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Fringe inserted successfully to all the relevant tables.
+2022-04-14 17:20:15,011-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Twilight Zone inserted successfully to all the relevant tables.
+2022-04-14 17:20:15,021-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Vinland Saga inserted successfully to all the relevant tables.
+2022-04-14 17:20:15,115-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Boardwalk Empire inserted successfully to all the relevant tables.
+2022-04-14 17:20:15,138-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Defending Jacob inserted successfully to all the relevant tables.
+2022-04-14 17:20:15,302-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Oz inserted successfully to all the relevant tables.
+2022-04-14 17:20:15,337-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Lupin inserted successfully to all the relevant tables.
+2022-04-14 17:20:15,517-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Shield inserted successfully to all the relevant tables.
+2022-04-14 17:20:15,743-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Masters Of Horror inserted successfully to all the relevant tables.
+2022-04-14 17:20:15,808-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Freaks And Geeks inserted successfully to all the relevant tables.
+2022-04-14 17:20:15,873-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Black Sails inserted successfully to all the relevant tables.
+2022-04-14 17:20:15,898-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Godless inserted successfully to all the relevant tables.
+2022-04-14 17:20:15,953-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Sharpe inserted successfully to all the relevant tables.
+2022-04-14 17:20:16,008-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Russian Doll inserted successfully to all the relevant tables.
+2022-04-14 17:20:16,033-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Grand Tour inserted successfully to all the relevant tables.
+2022-04-14 17:20:16,062-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Sacred Games inserted successfully to all the relevant tables.
+2022-04-14 17:20:16,088-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Patito Feo inserted successfully to all the relevant tables.
+2022-04-14 17:20:16,228-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Orange Is The New Black inserted successfully to all the relevant tables.
+2022-04-14 17:20:16,414-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about This Is Us inserted successfully to all the relevant tables.
+2022-04-14 17:20:16,433-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Young Royals inserted successfully to all the relevant tables.
+2022-04-14 17:20:16,549-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Bates Motel inserted successfully to all the relevant tables.
+2022-04-14 17:20:16,681-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Arrested Development inserted successfully to all the relevant tables.
+2022-04-14 17:20:16,718-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Carnival Row inserted successfully to all the relevant tables.
+2022-04-14 17:20:16,723-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Our Planet inserted successfully to all the relevant tables.
+2022-04-14 17:20:16,822-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Modern Love inserted successfully to all the relevant tables.
+2022-04-14 17:20:16,896-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Pacific inserted successfully to all the relevant tables.
+2022-04-14 17:20:16,932-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Office inserted successfully to all the relevant tables.
+2022-04-14 17:20:16,954-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Beatles: Get Back inserted successfully to all the relevant tables.
+2022-04-14 17:20:16,989-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Marvelous Mrs. Maisel inserted successfully to all the relevant tables.
+2022-04-14 17:20:17,220-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Futurama inserted successfully to all the relevant tables.
+2022-04-14 17:20:17,303-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Newsroom inserted successfully to all the relevant tables.
+2022-04-14 17:20:17,504-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Angel inserted successfully to all the relevant tables.
+2022-04-14 17:20:17,648-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Battlestar Galactica inserted successfully to all the relevant tables.
+2022-04-14 17:20:17,685-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Adventure Time: Distant Lands inserted successfully to all the relevant tables.
+2022-04-14 17:20:17,749-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about What We Do In The Shadows inserted successfully to all the relevant tables.
+2022-04-14 17:20:17,789-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Your Honor inserted successfully to all the relevant tables.
+2022-04-14 17:20:17,873-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Master Of None inserted successfully to all the relevant tables.
+2022-04-14 17:20:17,911-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Broadchurch inserted successfully to all the relevant tables.
+2022-04-14 17:20:17,969-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Mr. Bean inserted successfully to all the relevant tables.
+2022-04-14 17:20:18,019-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Over The Garden Wall inserted successfully to all the relevant tables.
+2022-04-14 17:20:18,046-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Downton Abbey inserted successfully to all the relevant tables.
+2022-04-14 17:20:18,076-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Kingdom inserted successfully to all the relevant tables.
+2022-04-14 17:20:18,198-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Six Feet Under inserted successfully to all the relevant tables.
+2022-04-14 17:20:18,207-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Gilmore Girls: A Year In The Life inserted successfully to all the relevant tables.
+2022-04-14 17:20:18,214-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Mirzapur inserted successfully to all the relevant tables.
+2022-04-14 17:20:18,391-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Columbo inserted successfully to all the relevant tables.
+2022-04-14 17:20:18,412-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Castle Rock inserted successfully to all the relevant tables.
+2022-04-14 17:20:18,454-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Close Enough inserted successfully to all the relevant tables.
+2022-04-14 17:20:18,499-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about The Man In The High Castle inserted successfully to all the relevant tables.
+2022-04-14 17:20:18,507-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about And Then There Were None inserted successfully to all the relevant tables.
+2022-04-14 17:20:18,527-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Wynonna Earp inserted successfully to all the relevant tables.
+2022-04-14 17:20:18,566-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about How To Get Away With Murder inserted successfully to all the relevant tables.
+2022-04-14 17:20:18,572-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Castlevania inserted successfully to all the relevant tables.
+2022-04-14 17:20:18,588-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Yellowstone inserted successfully to all the relevant tables.
+2022-04-14 17:20:18,628-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Silicon Valley inserted successfully to all the relevant tables.
+2022-04-14 17:20:18,655-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Doom Patrol inserted successfully to all the relevant tables.
+2022-04-14 17:20:18,699-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Deadwood inserted successfully to all the relevant tables.
+2022-04-14 17:20:18,700-INFO-FILE:database.py-FUNC:update_tvshows-LINE:243-Data mining project checkpoint #3, updating database finished successfully

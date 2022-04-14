@@ -168,7 +168,7 @@ def get_tv_show_list(tv_shows_urls, start, end, home_page_tv_shows_details, batc
                          f'was successfully scraped from ratingraph.')
             actors, synopsis, imdb_rating = get_api_data(tv_show_details[TITLE_INDEX])
             if (actors, synopsis, imdb_rating) == NO_API_RESULTS:
-                logging.error(f'{tv_show_details[RANK_INDEX]}-"{tv_show_details[TITLE_INDEX]}" wasnt scrape from API.')
+                logging.error(f"{tv_show_details[RANK_INDEX]}-'{tv_show_details[TITLE_INDEX]}' wasn't scrape from API.")
             else:
                 logging.info(f'{tv_show_details[RANK_INDEX]}-"{tv_show_details[TITLE_INDEX]}" scraped from API.')
             tv_show = TvShow(*tv_show_details, writers, directors, actors, synopsis, imdb_rating)
@@ -205,11 +205,9 @@ def get_staff_member_url_list(name):
 
 
 def get_staff_member_info(name):
-    """
-    Given a staff member name prints information about him/her and the tv-shows he/she has been part of.
+    """ Given a staff member name prints information about him/her and the tv-shows he/she has been part of.
     For now the staff member can be writer/director or both and the resulting output will refer to him/her in all
-    his/hers roles.
-    """
+    his/hers roles. """
     start = datetime.now()
     driver = get_headless_driver()
     urls = get_staff_member_url_list(name)
@@ -255,8 +253,8 @@ def scrape_ratingraph_parts(ranks=None, title=None):
         home_page_tv_shows_details = home_page_tv_shows_details[ranks[0]:ranks[1]]
         tv_shows_page_urls = tv_shows_page_urls[ranks[0]:ranks[1]]
     elif title:
-        titles = [details[1].title() for details in home_page_tv_shows_details
-                  if int(details[0].replace(",", "")) <= UPPER_BOUND]
+        titles = [details[TITLE_INDEX].title() for details in home_page_tv_shows_details
+                  if int(details[RANK_INDEX].replace(",", "")) <= UPPER_BOUND]
         if title.title() not in titles:
             return []
         rank_index = titles.index(title.title())
@@ -276,6 +274,7 @@ def scrape_ratingraph_parts(ranks=None, title=None):
 
 
 def get_api_data(title):
+    """ This function gets some additional data on a specific tvshow using API query on the omdb API."""
     title = title.replace(' ', '+')
     query = API_BASE_URL + title + API_KEY
     res_list = get_grequests_responses([query])
@@ -328,13 +327,11 @@ def main():
     """
     Scraping up to the predetermined upper bound (default: 250) tv shows from https://www.ratingraph.com/tv-shows/ .
     """
-    # UPPER_BOUND
-    upper_bound = 1
-    return scrape_ratingraph_parts(ranks=[0, upper_bound])
+    return scrape_ratingraph_parts(ranks=[0, UPPER_BOUND])
 
 
 if __name__ == '__main__':
-    # Every update is part of the third checkpoint.
+    # All update functions are part of the third checkpoint.
     set_logging()
     if len(sys.argv) == 1:
         # First checkpoint
@@ -351,4 +348,3 @@ if __name__ == '__main__':
             elif isinstance(info[0], StaffMember):
                 for st_member in info:
                     update_staff_member(st_member)
-

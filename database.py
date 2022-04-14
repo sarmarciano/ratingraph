@@ -23,7 +23,7 @@ def insert_into_actor_table(cursor, show):
 
 
 def insert_into_tvshow_actor_table(cursor, show):
-    """ Insert genres of a specific tv-show into tvshow_genre table. """
+    """ Insert actor of a specific tv-show into tvshow_actor table. """
     sql_check = """ 
     SELECT actor_id, tvshow_id
     FROM actor, tvshow 
@@ -44,13 +44,13 @@ def insert_into_tvshow_actor_table(cursor, show):
 
 
 def insert_into_tvshow_rank_table(cursor, show):
-    """ Insert data of a specific tv-show 'show', into tvshow table. """
+    """ Insert a specific tv-show 'show' and its rank id into tvshow_rank table. """
     sql_get_id = """ 
     SELECT tvshow_id 
     FROM tvshow
     WHERE title = "{0}" and start_year = {1};
     """
-    tvshow_template = """
+    tvshow_rank_template = """
     INSERT INTO tvshow_rank (tvshow_id, tvshow_rank, rank_date) 
     VALUES ({0}, {1} ,"{2}")
     ON DUPLICATE KEY UPDATE rank_date="{2}";
@@ -59,12 +59,12 @@ def insert_into_tvshow_rank_table(cursor, show):
     cursor.execute(get_query)
     result = cursor.fetchone()
     today_str = datetime.today().strftime('%Y-%m-%d')
-    query = tvshow_template.format(result['tvshow_id'], show.rank, today_str)
+    query = tvshow_rank_template.format(result['tvshow_id'], show.rank, today_str)
     cursor.execute(query)
 
 
 def insert_into_tvshow_table(cursor, show):
-    """ Insert data of a specific tv-show 'show', into tvshow table. """
+    """ Insert data of a specific tv-show 'show' into tvshow table. """
     sql_check = """ 
     SELECT COUNT(*) as count 
     FROM tvshow 
@@ -82,7 +82,6 @@ def insert_into_tvshow_table(cursor, show):
     check_query = sql_check.format(show.title, show.start_year)
     cursor.execute(check_query)
     result = cursor.fetchone()
-    query = ''
     if result['count'] == NO_RESULT:
         query = tvshow_template.format(show.title, show.nb_seasons, show.nb_episodes, show.start_year, show.end_year,
                                        show.imdb_rating, show.synopsis)
@@ -93,7 +92,7 @@ def insert_into_tvshow_table(cursor, show):
 
 
 def insert_into_genre_table(cursor, show):
-    """ Insert genres into genre table. """
+    """ Insert genres name and id into genre table. """
     sql_check = """ 
     SELECT COUNT(*) as count FROM genre WHERE genre_name="{0}";
     """
@@ -157,7 +156,7 @@ def insert_into_staff_member_table(cursor, s_member):
 
 
 def insert_into_tvshow_staff_table(cursor, s_member, show):
-    """ Insert data into tvshow_staff table. """
+    """ Insert data of a specific s_member and a show into tvshow_staff table. """
     sql_check = """ 
     SELECT staff_member_id, tvshow_id
     FROM staff_member, tvshow 
@@ -189,7 +188,6 @@ def insert_staff_members_of_a_tvshow(cursor, show):
 
 def create_ratingraph_db():
     """ Creating mysql database named 'ratingraph' if it is not already existing. """
-    initialize_script = ''
     with open(SQL_INIT_FILEPATH, 'r') as f:
         initialize_script = f.read()
         query_list = initialize_script.split('\n')
@@ -215,6 +213,7 @@ def create_ratingraph_db():
 
 
 def update_staff_member(s_member):
+    """ This function updates the staff_member information for an existing s_member."""
     connection = create_ratingraph_db()
     with connection:
         with connection.cursor() as cursor:
@@ -224,8 +223,7 @@ def update_staff_member(s_member):
 
 def update_tvshows(tv_shows):
     """
-    Creating a mysql database named 'ratingraph' and fill it with data from
-    the website https://www.ratingraph.com/tv-shows/ .
+    This function insert or updates all information related to a list of tvshows in all the table of the database.
     """
     connection = create_ratingraph_db()
     if not tv_shows:

@@ -21,16 +21,16 @@ ACTORS = 'Actors'
 SYNOPSIS = 'Plot'
 IMDB_RATING = 'imdbRating'
 NO_RESULT = 0
+NA = 'N/A'
 
 FORMAT = '%(asctime)s-%(levelname)s-FILE:%(filename)s-FUNC:%(funcName)s-LINE:%(lineno)d-%(message)s'
 FILE_NAME = 'ratingraph_logging.log'
 
 # TODO sign up for omdbapi and put your one key.
-# API_KEY = "&apikey=YOUR_KEY"
-# my_key = f8ff4bf5
-# sarah's_key = 9dbc638c
-API_KEY = '&apikey=9dbc638c'
+API_KEY = "&apikey=YOUR_KEY"
+
 NO_API_RESULTS = ([], '', -1.0)
+
 # database constants
 SQL_INIT_FILEPATH = 'ratingraph_init.sql'
 HOST = 'localhost'
