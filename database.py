@@ -17,7 +17,7 @@ def insert_into_actor_table(cursor, show):
         check_query = sql_check.format(actor_name)
         cursor.execute(check_query)
         result = cursor.fetchone()
-        if result['count'] == 0:
+        if result['count'] == NO_RESULT:
             query = tvshow_actor_template.format(actor_name)
             cursor.execute(query)
 
@@ -83,7 +83,7 @@ def insert_into_tvshow_table(cursor, show):
     cursor.execute(check_query)
     result = cursor.fetchone()
     query = ''
-    if result['count'] == 0:
+    if result['count'] == NO_RESULT:
         query = tvshow_template.format(show.title, show.nb_seasons, show.nb_episodes, show.start_year, show.end_year,
                                        show.imdb_rating, show.synopsis)
     else:
@@ -104,7 +104,7 @@ def insert_into_genre_table(cursor, show):
         check_query = sql_check.format(genre_name)
         cursor.execute(check_query)
         result = cursor.fetchone()
-        if result['count'] == 0:
+        if result['count'] == NO_RESULT:
             query = tvshow_genre_template.format(genre_name)
             cursor.execute(query)
 
@@ -149,7 +149,7 @@ def insert_into_staff_member_table(cursor, s_member):
     check_query = sql_check.format(s_member.name, s_member.role)
     cursor.execute(check_query)
     result = cursor.fetchone()
-    if result['count'] == 0:
+    if result['count'] == NO_RESULT:
         query = staff_member_template.format(s_member.name, s_member.role, s_member.rank, s_member.nb_tv_shows)
     else:
         query = staff_member_update.format(s_member.name, s_member.role, s_member.rank, s_member.nb_tv_shows)

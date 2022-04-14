@@ -1,0 +1,10 @@
+2022-04-14 16:08:33,698-INFO-FILE:utils.py-FUNC:download_chromedriver-LINE:235-Chromedriver is already installed.
+2022-04-14 16:08:45,530-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-1-"Chernobyl"was successfully scraped from ratingraph.
+2022-04-14 16:08:45,573-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-1-"Chernobyl" scraped from API.
+2022-04-14 16:08:45,632-INFO-FILE:ratingraph_scraper.py-FUNC:scrape_ratingraph_parts-LINE:274-Data mining project checkpoint #1 took 0:00:12.857138
+2022-04-14 16:09:30,509-INFO-FILE:utils.py-FUNC:download_chromedriver-LINE:235-Chromedriver is already installed.
+2022-04-14 16:09:43,456-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-1-"Chernobyl"was successfully scraped from ratingraph.
+2022-04-14 16:09:43,486-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-1-"Chernobyl" scraped from API.
+2022-04-14 16:09:43,544-INFO-FILE:ratingraph_scraper.py-FUNC:scrape_ratingraph_parts-LINE:274-Data mining project checkpoint #1 took 0:00:13.708374
+2022-04-14 16:09:43,589-INFO-FILE:database.py-FUNC:update_tvshows-LINE:243-Details about Chernobyl inserted successfully to all the relevant tables.
+2022-04-14 16:09:43,589-INFO-FILE:database.py-FUNC:update_tvshows-LINE:245-Data mining project checkpoint #3, updating database finished successfully

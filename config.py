@@ -17,6 +17,10 @@ OK = 200
 API_BASE_URL = 'http://www.omdbapi.com/?t='
 RANK_INDEX = 0
 TITLE_INDEX = 1
+ACTORS = 'Actors'
+SYNOPSIS = 'Plot'
+IMDB_RATING = 'imdbRating'
+NO_RESULT = 0
 
 FORMAT = '%(asctime)s-%(levelname)s-FILE:%(filename)s-FUNC:%(funcName)s-LINE:%(lineno)d-%(message)s'
 FILE_NAME = 'ratingraph_logging.log'

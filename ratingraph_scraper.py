@@ -252,10 +252,8 @@ def scrape_ratingraph_parts(ranks=None, title=None):
     if not ranks and not title:
         return tv_shows_list
     if ranks:
-        first_rank = ranks[0]
-        last_rank = ranks[1]
-        home_page_tv_shows_details = home_page_tv_shows_details[first_rank:last_rank]
-        tv_shows_page_urls = tv_shows_page_urls[first_rank:last_rank]
+        home_page_tv_shows_details = home_page_tv_shows_details[ranks[0]:ranks[1]]
+        tv_shows_page_urls = tv_shows_page_urls[ranks[0]:ranks[1]]
     elif title:
         titles = [details[1].title() for details in home_page_tv_shows_details
                   if int(details[0].replace(",", "")) <= UPPER_BOUND]
@@ -286,10 +284,10 @@ def get_api_data(title):
         print(f'Could not request omdbapi website - status code - {res.status_code}')
         return NO_API_RESULTS
     details = json.loads(res_list[0].text)
-    if not details.get('Actors'):
+    if not details.get(ACTORS):
         return NO_API_RESULTS
-    actor_list = details['Actors'].split(', ')
-    return actor_list, details['Plot'], details['imdbRating']
+    actor_list = details[ACTORS].split(', ')
+    return actor_list, details[SYNOPSIS], details[IMDB_RATING]
 
 
 def cli_main():
@@ -353,5 +351,4 @@ if __name__ == '__main__':
             elif isinstance(info[0], StaffMember):
                 for st_member in info:
                     update_staff_member(st_member)
-
 
