@@ -17,10 +17,16 @@ import argparse
 import sys
 from config import *
 import json
+import logging
 from database import update_tvshows, update_staff_member
 
 # Global variables
 staff_member_instance_dict = dict()
+
+
+def set_logging():
+    """ Set logging basic config to INFO level and to write the output to a file. """
+    logging.basicConfig(filename=FILE_NAME, format=FORMAT, level=logging.INFO)
 
 
 def get_headless_driver():
@@ -66,6 +72,10 @@ def get_tv_show_staff_members(role, names, urls):
     responses = get_grequests_responses(relevant_urls)
     for name, url, res in zip(relevant_names, relevant_urls, responses):
         key = (name, role)
+        if res is None or res.status_code != 200:
+            logging.error(f"Did not get a successful response "
+                          f"for {name}/{role}.")
+            continue
         html_text = res.text
         soup = BeautifulSoup(html_text, PARSER)
         rank, number_of_tv_shows = get_staff_member_details(soup, role)
@@ -92,7 +102,6 @@ def get_staff_members(tv_soup, role):
         url = '/'.join(URL.split('/')[:-1])
         staff_member_urls.append(url + a_tag['href'])
         staff_member_names.append(a_tag.text.title())
-
     staff_members = get_tv_show_staff_members(staff_member_tuple[1], staff_member_names, staff_member_urls)
     return staff_members
 
@@ -148,10 +157,20 @@ def get_tv_show_list(tv_shows_urls, start, end, home_page_tv_shows_details, batc
         for i in range(batch_size):
             tv_show_details, tv_show_url = home_page_tv_shows_details[index + i], tv_shows_urls[index + i]
             res = responses[i]
+            if res is None or res.status_code != 200:
+                logging.error(f"Did not get a successful response "
+                              f"for {tv_show_details[0]} - {tv_show_details[2]}.")
+                continue
             tv_soup = BeautifulSoup(res.text, PARSER)
             writers = get_staff_members(tv_soup, WRITER)
             directors = get_staff_members(tv_soup, DIRECTOR)
-            actors, synopsis, imdb_rating = get_api_data(tv_show_details[TITLE])
+            logging.info(f'{tv_show_details[RANK_INDEX]}-"{tv_show_details[TITLE_INDEX]}"'
+                         f'was successfully scraped from ratingraph.')
+            actors, synopsis, imdb_rating = get_api_data(tv_show_details[TITLE_INDEX])
+            if (actors, synopsis, imdb_rating) == ([], '', -1.0):
+                logging.error(f'{tv_show_details[RANK_INDEX]}-"{tv_show_details[TITLE_INDEX]}" wasnt scrape from API.')
+            else:
+                logging.info(f'{tv_show_details[RANK_INDEX]}-"{tv_show_details[TITLE_INDEX]}" scraped from API.')
             tv_show = TvShow(*tv_show_details, writers, directors, actors, synopsis, imdb_rating)
             print(tv_show)
             print()
@@ -223,7 +242,11 @@ def scrape_ratingraph_parts(ranks=None, title=None):
     """ Given a range of ranks ([starting_rank - 1, ending_rank]) or tv show title return a list of tv-shows objects."""
     start = datetime.now()
     driver = get_headless_driver()
-    home_page_tv_shows_details, tv_shows_page_urls = get_tv_shows_details_and_urls(driver, URL)
+    try:
+        home_page_tv_shows_details, tv_shows_page_urls = get_tv_shows_details_and_urls(driver, URL)
+    except Exception as e:
+        logging.critical(f"Could not access {URL}.\n{e}")
+        return []
     tv_shows_list = []
     if not ranks and not title:
         return tv_shows_list
@@ -249,6 +272,7 @@ def scrape_ratingraph_parts(ranks=None, title=None):
     tv_shows_list = whole_list + remainder_list
     driver.close()
     print(f"Data mining project checkpoint #1 took {datetime.now() - start}")
+    logging.info(f"Data mining project checkpoint #1 took {datetime.now() - start}")
     return tv_shows_list
 
 
@@ -257,7 +281,7 @@ def get_api_data(title):
     query = API_BASE_URL + title + API_KEY
     res_list = get_grequests_responses([query])
     res = res_list[0]
-    if res.status_code != OK:
+    if not res or res.status_code != OK:
         print(f'Could not request omdbapi website - status code - {res.status_code}')
         return [], '', -1.0
     details = json.loads(res_list[0].text)
@@ -269,6 +293,7 @@ def get_api_data(title):
 
 def cli_main():
     """ Cli option for checkpoint 2 can scrap data by terms as explain in -h help command. """
+    start = datetime.now()
     parser = argparse.ArgumentParser(description='ratingraph-scraper.')
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument('--tv_shows_range', type=int, metavar=('start', 'end'), nargs=2,
@@ -296,6 +321,8 @@ def cli_main():
         return result
     elif args.staff_member:
         return get_staff_member_info(args.staff_member.title())
+    print(f"Data mining project checkpoint #2 took {datetime.now() - start}")
+    logging.info(f"Data mining project checkpoint #2 took {datetime.now() - start}")
 
 
 def main():
@@ -309,6 +336,7 @@ def main():
 
 if __name__ == '__main__':
     # Every update is part of the third checkpoint.
+    set_logging()
     if len(sys.argv) == 1:
         # First checkpoint
         tv_shows = main()

@@ -1,8 +1,8 @@
+import logging
 import pymysql
 import pymysql.cursors
 from config import *
 from datetime import datetime
-# from ratingraph_scraper import scrape_ratingraph_parts
 
 
 def insert_into_actor_table(cursor, show):
@@ -228,6 +228,8 @@ def update_tvshows(tv_shows):
     the website https://www.ratingraph.com/tv-shows/ .
     """
     connection = create_ratingraph_db()
+    if not tv_shows:
+        return
     with connection:
         with connection.cursor() as cursor:
             for show in tv_shows:
@@ -238,4 +240,7 @@ def update_tvshows(tv_shows):
                 insert_staff_members_of_a_tvshow(cursor, show)
                 insert_into_actor_table(cursor, show)
                 insert_into_tvshow_actor_table(cursor, show)
+                logging.info(f'Details about {show.title} inserted successfully to all the relevant tables.')
         connection.commit()
+        logging.info("Data mining project checkpoint #3, updating database finished successfully")
+        print(f"Data mining project checkpoint #3, updating database finished successfully")

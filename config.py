@@ -15,7 +15,12 @@ GENRE_INDEX = 4
 UNIQUE_THRESHOLD = 2
 OK = 200
 API_BASE_URL = 'http://www.omdbapi.com/?t='
-TITLE = 1
+RANK_INDEX = 0
+TITLE_INDEX = 1
+
+FORMAT = '%(asctime)s-%(levelname)s-FILE:%(filename)s-FUNC:%(funcName)s-LINE:%(lineno)d-%(message)s'
+FILE_NAME = 'ratingraph_logging.log'
+
 # TODO sign up for omdbapi and put your one key.
 # API_KEY = "&apikey=YOUR_KEY"
 # my_key = f8ff4bf5
