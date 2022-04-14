@@ -159,7 +159,7 @@ def get_tv_show_list(tv_shows_urls, start, end, home_page_tv_shows_details, batc
             res = responses[i]
             if res is None or res.status_code != 200:
                 logging.error(f"Did not get a successful response "
-                              f"for {tv_show_details[0]} - {tv_show_details[2]}.")
+                              f"for {tv_show_details[RANK_INDEX]} - {tv_show_details[TITLE_INDEX]}.")
                 continue
             tv_soup = BeautifulSoup(res.text, PARSER)
             writers = get_staff_members(tv_soup, WRITER)
