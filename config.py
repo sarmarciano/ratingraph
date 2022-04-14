@@ -26,7 +26,7 @@ FILE_NAME = 'ratingraph_logging.log'
 # my_key = f8ff4bf5
 # sarah's_key = 9dbc638c
 API_KEY = '&apikey=9dbc638c'
-
+NO_API_RESULTS = ([], '', -1.0)
 # database constants
 SQL_INIT_FILEPATH = 'ratingraph_init.sql'
 HOST = 'localhost'

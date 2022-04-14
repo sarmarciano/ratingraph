@@ -72,7 +72,7 @@ def get_tv_show_staff_members(role, names, urls):
     responses = get_grequests_responses(relevant_urls)
     for name, url, res in zip(relevant_names, relevant_urls, responses):
         key = (name, role)
-        if res is None or res.status_code != 200:
+        if res is None or res.status_code != OK:
             logging.error(f"Did not get a successful response "
                           f"for {name}/{role}.")
             continue
@@ -157,7 +157,7 @@ def get_tv_show_list(tv_shows_urls, start, end, home_page_tv_shows_details, batc
         for i in range(batch_size):
             tv_show_details, tv_show_url = home_page_tv_shows_details[index + i], tv_shows_urls[index + i]
             res = responses[i]
-            if res is None or res.status_code != 200:
+            if res is None or res.status_code != OK:
                 logging.error(f"Did not get a successful response "
                               f"for {tv_show_details[RANK_INDEX]} - {tv_show_details[TITLE_INDEX]}.")
                 continue
@@ -167,7 +167,7 @@ def get_tv_show_list(tv_shows_urls, start, end, home_page_tv_shows_details, batc
             logging.info(f'{tv_show_details[RANK_INDEX]}-"{tv_show_details[TITLE_INDEX]}"'
                          f'was successfully scraped from ratingraph.')
             actors, synopsis, imdb_rating = get_api_data(tv_show_details[TITLE_INDEX])
-            if (actors, synopsis, imdb_rating) == ([], '', -1.0):
+            if (actors, synopsis, imdb_rating) == NO_API_RESULTS:
                 logging.error(f'{tv_show_details[RANK_INDEX]}-"{tv_show_details[TITLE_INDEX]}" wasnt scrape from API.')
             else:
                 logging.info(f'{tv_show_details[RANK_INDEX]}-"{tv_show_details[TITLE_INDEX]}" scraped from API.')
@@ -221,10 +221,11 @@ def get_staff_member_info(name):
         s_members.append(s_member)
         print(s_member)
         tv_shows_details, tv_series_page_urls = get_tv_shows_details_and_urls(driver, url)
-        tv_shows_ranks_titles = [[int(details[0].replace(',', '')), details[1]] for details in tv_shows_details]
-        relevant_tv_shows_ranks_titles = [[ranks_titles[0], ranks_titles[1]] for ranks_titles in tv_shows_ranks_titles
-                                          if ranks_titles[0] <= UPPER_BOUND]
-        relevant_tv_shows_ranks_titles = sorted(relevant_tv_shows_ranks_titles, key=lambda x: x[0])
+        tv_shows_ranks_titles = [[int(details[RANK_INDEX].replace(',', '')), details[TITLE_INDEX]] for details
+                                 in tv_shows_details]
+        relevant_tv_shows_ranks_titles = [[ranks_titles[RANK_INDEX], ranks_titles[TITLE_INDEX]] for ranks_titles in
+                                          tv_shows_ranks_titles if ranks_titles[RANK_INDEX] <= UPPER_BOUND]
+        relevant_tv_shows_ranks_titles = sorted(relevant_tv_shows_ranks_titles, key=lambda x: x[RANK_INDEX])
         if relevant_tv_shows_ranks_titles:
             worked_on_top_250 = True
             print('\n' + role)
@@ -283,10 +284,10 @@ def get_api_data(title):
     res = res_list[0]
     if not res or res.status_code != OK:
         print(f'Could not request omdbapi website - status code - {res.status_code}')
-        return [], '', -1.0
+        return NO_API_RESULTS
     details = json.loads(res_list[0].text)
     if not details.get('Actors'):
-        return [], '', -1.0
+        return NO_API_RESULTS
     actor_list = details['Actors'].split(', ')
     return actor_list, details['Plot'], details['imdbRating']
 
