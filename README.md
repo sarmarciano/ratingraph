@@ -14,6 +14,8 @@ I. Sign up to omdb API:
 3. create a FREE account: you'll get an email with your key (please check your spams)
 4. enter the key you received in the config file in API_KEY
 
+####Note : the free version of the scraper allows to scrap with a limit of 1000 tries a day.
+
 II. Get the scraper files:
 1. clone the repository
 2. install in the working directory `pip install -r requirements.txt`.
