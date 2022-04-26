@@ -190,6 +190,7 @@ def create_ratingraph_db():
     """ Creating mysql database named 'ratingraph' if it is not already existing. """
     with open(SQL_INIT_FILEPATH, 'r') as f:
         initialize_script = f.read()
+        initialize_script = initialize_script.format(DB_NAME)
         query_list = initialize_script.split('\n')
         query_list = [query for query in query_list if query]
 

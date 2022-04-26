@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS ratingraph;
-USE ratingraph;
+CREATE DATABASE IF NOT EXISTS {0};
+USE {0};
 CREATE TABLE IF NOT EXISTS tvshow (tvshow_id INT AUTO_INCREMENT PRIMARY KEY, title VARCHAR(100), nb_seasons INT NOT NULL, nb_episodes INT NOT NULL, start_year INT NOT NULL, end_year INT, imdb_rating FLOAT, synopsis VARCHAR(1000));
 CREATE TABLE IF NOT EXISTS tvshow_rank (tvshow_id INT, tvshow_rank INT, rank_date DATE, PRIMARY KEY (tvshow_id, tvshow_rank), FOREIGN KEY (tvshow_id) REFERENCES tvshow(tvshow_id));
 CREATE TABLE IF NOT EXISTS genre (genre_id INT AUTO_INCREMENT PRIMARY KEY, genre_name VARCHAR(20));
