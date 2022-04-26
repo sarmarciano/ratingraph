@@ -27,7 +27,7 @@ FORMAT = '%(asctime)s-%(levelname)s-FILE:%(filename)s-FUNC:%(funcName)s-LINE:%(l
 FILE_NAME = 'ratingraph_logging.log'
 
 # TODO sign up for omdbapi and put your one key.
-API_KEY = "&apikey=YOUR_KEY"
+API_KEY = "&apikey=9dbc638c"
 
 NO_API_RESULTS = ([], '', -1.0)
 
@@ -36,4 +36,4 @@ SQL_INIT_FILEPATH = 'ratingraph_init.sql'
 HOST = 'localhost'
 DB_NAME = 'ratingraph'
 USERNAME = 'root'  # TODO please update with your personal username
-PASSWORD = 'root'  # TODO please update with your personal password
+PASSWORD = '12345678'  # TODO please update with your personal password

@@ -767,3 +767,19 @@
 2022-04-14 17:20:18,655-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Doom Patrol inserted successfully to all the relevant tables.
 2022-04-14 17:20:18,699-INFO-FILE:database.py-FUNC:update_tvshows-LINE:241-Details about Deadwood inserted successfully to all the relevant tables.
 2022-04-14 17:20:18,700-INFO-FILE:database.py-FUNC:update_tvshows-LINE:243-Data mining project checkpoint #3, updating database finished successfully
+2022-04-26 21:19:59,133-INFO-FILE:utils.py-FUNC:download_chromedriver-LINE:235-Chromedriver is already installed.
+2022-04-26 21:20:13,761-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-2-"Game Of Thrones"was successfully scraped from ratingraph.
+2022-04-26 21:20:14,021-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-2-"Game Of Thrones" scraped from API.
+2022-04-26 21:20:14,085-INFO-FILE:ratingraph_scraper.py-FUNC:scrape_ratingraph_parts-LINE:272-Data mining project checkpoint #1 took 0:00:31.205857
+2022-04-26 21:23:00,987-INFO-FILE:utils.py-FUNC:download_chromedriver-LINE:235-Chromedriver is already installed.
+2022-04-26 21:23:13,446-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-2-"Game Of Thrones"was successfully scraped from ratingraph.
+2022-04-26 21:23:13,507-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-2-"Game Of Thrones" scraped from API.
+2022-04-26 21:23:13,565-INFO-FILE:ratingraph_scraper.py-FUNC:scrape_ratingraph_parts-LINE:272-Data mining project checkpoint #1 took 0:00:13.407829
+2022-04-26 21:23:13,643-INFO-FILE:database.py-FUNC:update_tvshows-LINE:242-Details about Game Of Thrones inserted successfully to all the relevant tables.
+2022-04-26 21:23:13,644-INFO-FILE:database.py-FUNC:update_tvshows-LINE:244-Data mining project checkpoint #3, updating database finished successfully
+2022-04-26 21:23:30,427-INFO-FILE:utils.py-FUNC:download_chromedriver-LINE:235-Chromedriver is already installed.
+2022-04-26 21:23:42,340-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:167-1-"Chernobyl"was successfully scraped from ratingraph.
+2022-04-26 21:23:42,585-INFO-FILE:ratingraph_scraper.py-FUNC:get_tv_show_list-LINE:173-1-"Chernobyl" scraped from API.
+2022-04-26 21:23:42,651-INFO-FILE:ratingraph_scraper.py-FUNC:scrape_ratingraph_parts-LINE:272-Data mining project checkpoint #1 took 0:00:12.939858
+2022-04-26 21:23:42,687-INFO-FILE:database.py-FUNC:update_tvshows-LINE:242-Details about Chernobyl inserted successfully to all the relevant tables.
+2022-04-26 21:23:42,688-INFO-FILE:database.py-FUNC:update_tvshows-LINE:244-Data mining project checkpoint #3, updating database finished successfully
