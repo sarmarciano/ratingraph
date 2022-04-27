@@ -783,3 +783,5 @@
 2022-04-26 21:23:42,651-INFO-FILE:ratingraph_scraper.py-FUNC:scrape_ratingraph_parts-LINE:272-Data mining project checkpoint #1 took 0:00:12.939858
 2022-04-26 21:23:42,687-INFO-FILE:database.py-FUNC:update_tvshows-LINE:242-Details about Chernobyl inserted successfully to all the relevant tables.
 2022-04-26 21:23:42,688-INFO-FILE:database.py-FUNC:update_tvshows-LINE:244-Data mining project checkpoint #3, updating database finished successfully
+2022-04-27 16:27:35,562-INFO-FILE:utils.py-FUNC:download_chromedriver-LINE:221-Downloading chromedriver (101.0.4951.15)...
+2022-04-27 16:27:50,714-INFO-FILE:utils.py-FUNC:download_chromedriver-LINE:235-Chromedriver is already installed.

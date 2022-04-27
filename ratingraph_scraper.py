@@ -34,7 +34,7 @@ def get_headless_driver():
     chromedriver_autoinstaller.install()
     chrome_options = Options()
     chrome_options.add_argument(HEADLESS)
-    driver = webdriver.Chrome(options=chrome_options)
+    driver = webdriver.Chrome(executable_path='/usr/bin/chromedriver', options=chrome_options)
     return driver
 
 
